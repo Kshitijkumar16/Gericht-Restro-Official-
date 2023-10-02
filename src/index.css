@@ -29,14 +29,13 @@ a {
     @apply sm:px-16 px-8 sm:py-24 py-12;
   }
 
+  .granite_bg {
+    @apply bg-[url(./assets/bg.png)]
+  }
+
   .padding-x {
     @apply sm:px-16 px-8;
   }
-
-  .granite_bg {
-    @apply bg-[url('src/assets/bg.png')]
-  }
-
 
   .hide_scroll::-webkit-scrollbar {
     display: none;

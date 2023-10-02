@@ -13,7 +13,7 @@ const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
 
 const Laurels = () => (
   <div
-    className="py-40 padding-x granite_bg text-golden font-cormorant"
+    className="py-40 padding-x bg-[url(./assets/bg.png)] text-golden font-cormorant"
     id="awards-section"
   >
     <div className="lg:padding-x lg:gap-4 flex max-lg:flex-col justify-start items-center max-lg:items-start">
