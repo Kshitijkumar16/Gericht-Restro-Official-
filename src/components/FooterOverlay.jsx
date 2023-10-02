@@ -1,10 +1,10 @@
-import React from 'react';
-
+import React from "react";
 
 const FooterOverlay = () => (
-  <div id='footeroverlay-div ' className="flex item-center justify-center">
-
-  </div>
+  <div
+    id="footeroverlay-div "
+    className="item-center flex justify-center"
+  ></div>
 );
 
 export default FooterOverlay;

@@ -8,24 +8,30 @@ import { gericht, hamLogo } from "../assets";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
-    <nav className="flex justify-between items-center text-golden font-alt pb-8 pt-12 lg:padding-x">
-      <div id="logo-div" className="flex justify-between items-center shadow-sh_gold rounded-lg
-      ">
+    <nav className="lg:padding-x flex items-center justify-between pb-8 pt-12 font-alt text-golden">
+      <div
+        id="logo-div"
+        className="flex items-center justify-between rounded-lg shadow-sh_gold
+      "
+      >
         <img
           src={gericht}
           width={200}
           height="auto"
           alt="Geritch-logo"
-          className=" border-golden border-[2px] border-opacity-70 px-3 py-1 rounded-lg"
+          className=" rounded-lg border-[2px] border-golden border-opacity-70 px-3 py-1"
         />
       </div>
 
-      <div id="desktop-navbar" className=" flex justify-center items-center gap-28 max-2xl:hidden">
+      <div
+        id="desktop-navbar"
+        className=" flex items-center justify-center gap-28 max-2xl:hidden"
+      >
         {nav_linkss.map((item) => (
           <div key={item.label}>
             <a
               href={item.href}
-              className=" font-cormorant font-bold text-xl p-2 hover:border-y-[0.5px] transition-all ease-in-out duration-300 hover:border-golden"
+              className=" p-2 font-cormorant text-xl font-bold transition-all duration-300 ease-in-out hover:border-y-[0.5px] hover:border-golden"
             >
               {item.label}
             </a>
@@ -33,25 +39,21 @@ const Navbar = () => {
         ))}
       </div>
 
-      <div id="side-overlay-div" className="2xl:hidden text-crimson">
-        <img 
-        src={hamLogo}
-          width={20}
-          onClick={() => setToggleMenu(true)}
-        />
+      <div id="side-overlay-div" className="text-crimson 2xl:hidden">
+        <img src={hamLogo} width={20} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
-          <div className="text-golden z-50 transition-all ease-in-out duration-500 bg-black z-5 fixed top-0 left-0 w-full h-screen flex justify-center items-center ">
-            <div className="border-2 border-golden p-[200px] relative">
+          <div className="z-5 fixed left-0 top-0 z-50 flex h-screen w-full items-center justify-center bg-black text-golden transition-all duration-500 ease-in-out ">
+            <div className="relative border-2 border-golden p-[200px]">
               <MdOutlineRestaurantMenu
                 fontSize={27}
-                className="absolute top-10 right-10 cursor-pointer"
+                className="absolute right-10 top-10 cursor-pointer"
                 onClick={() => setToggleMenu(false)}
               />
               <div className="  ">
                 {nav_linkss.map((link) => (
-                  <div className="p-6 transition-[2s] text-center font-extrabold text-3xl font-cormorant">
+                  <div className="p-6 text-center font-cormorant text-3xl font-extrabold transition-[2s]">
                     <a
-                      className="hover:text-crimson duration-400"
+                      className="duration-400 hover:text-crimson"
                       href={link.href}
                       onClick={() => setToggleMenu(false)}
                     >
@@ -65,27 +67,27 @@ const Navbar = () => {
         )}
       </div>
 
-      <div id="login-div" className="flex gap-3 items-center lg:justify-between max-lg:justify-end">
+      <div
+        id="login-div"
+        className="flex items-center gap-3 max-lg:justify-end lg:justify-between"
+      >
         <button
           type="button"
-          className="text-black font-extrabold max-lg:font-bold px-3 py-2 max-lg:px-2 rounded-md bg-golden hover:py-3 transition-all ease-in-out duration-300"
+          className="rounded-md bg-golden px-3 py-2 font-extrabold text-black transition-all duration-300 ease-in-out hover:py-3 max-lg:px-2 max-lg:font-bold"
         >
           Log In
         </button>
-        <div className="text-transparent max-w-[2px] bg-golden h-[40px]">
+        <div className="h-[40px] max-w-[2px] bg-golden text-transparent">
           sup
         </div>
         <button
           type="button"
-          className="text-golden font-bold text-[18px] max-lg:text-[15px] max-lg:px-0 hover:border-y-[0.5px] transition-all ease-in-out duration-300 p-2"
+          className="p-2 text-[18px] font-bold text-golden transition-all duration-300 ease-in-out hover:border-y-[0.5px] max-lg:px-0 max-lg:text-[15px]"
         >
           Book Table
         </button>
         <div />
-        
       </div>
-
-
     </nav>
   );
 };

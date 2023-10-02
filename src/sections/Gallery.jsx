@@ -1,33 +1,33 @@
-
 import { gallery01, gallery02, gallery03, gallery04, spoon } from "../assets";
 import { Carousel } from "../components";
 
-
 const Gallery = () => {
-
- const carouselImages = [gallery01, gallery02, gallery03, gallery04];
+  const carouselImages = [gallery01, gallery02, gallery03, gallery04];
 
   return (
-    <section className=" text-golden font-cormorant py-40">
-      <div className=" gap-10 flex max-md:flex-col justify-between items-center">
+    <section className=" py-40 font-cormorant text-golden">
+      <div className=" flex items-center justify-between gap-10 max-md:flex-col">
         <div className="w-1/2">
-          <h1 className="text-white text-[30px] ">Instagram</h1>
+          <h1 className="text-[30px] text-white ">Instagram</h1>
           <img src={spoon} alt="spoon-icon" width={50} />
-          <h1 className="text-[52px] font-bold mt-6">Photo Gallery</h1>
-          <p className="font-alt mt-12 text-gray text-[20px] leading-[36px]">
+          <h1 className="mt-6 text-[52px] font-bold">Photo Gallery</h1>
+          <p className="mt-12 font-alt text-[20px] leading-[36px] text-gray">
             At Gericht, dining is not just about food; it's about creating
             moments of connection. Each dish is meticulously crafted to delight
             both the eyes and the palate.
           </p>
           <button
             type="button"
-            className="bg-golden text-black font-extrabold text-[20px] py-2 px-5 hover:bg-white duration-200 mt-12"
+            className="mt-12 bg-golden px-5 py-2 text-[20px] font-extrabold text-black duration-200 hover:bg-white"
           >
             View More
           </button>
         </div>
-        <div id="gallery-carousel-div" className="w-1/2 flex items-center justify-center">
-        < Carousel carouselImages={carouselImages} />
+        <div
+          id="gallery-carousel-div"
+          className="flex w-1/2 items-center justify-center"
+        >
+          <Carousel carouselImages={carouselImages} />
         </div>
       </div>
     </section>

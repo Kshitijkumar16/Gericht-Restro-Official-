@@ -1,23 +1,27 @@
-import React from 'react';
-import { MenuItem } from '../components';
-import { Menu, spoon } from '../assets';
-import { cocktails, wines } from '../constants';
+import React from "react";
+import { MenuItem } from "../components";
+import { Menu, spoon } from "../assets";
+import { cocktails, wines } from "../constants";
 
 const SpecialMenu = () => (
   <section
-    className=" font-cormorant flex items-center justify-center flex-col text-golden pt-12 pb-40 max-lg:py-24"
+    className=" flex flex-col items-center justify-center pb-40 pt-12 font-cormorant text-golden max-lg:py-24"
     id="menu-section"
   >
-    <div className="flex flex-col justify-start items-center">
-      <h1 className="text-white text-[22px] max-lg:text-[20px]">Menu that fits your palatte</h1>
-      <img src={spoon} alt="spoon-icon" className="w-[50px] mt-2" />
-      <h1 className="text-[56px] mt-4 max-lg:text-[48px]">Today&apos;s Special</h1>
+    <div className="flex flex-col items-center justify-start">
+      <h1 className="text-[22px] text-white max-lg:text-[20px]">
+        Menu that fits your palatte
+      </h1>
+      <img src={spoon} alt="spoon-icon" className="mt-2 w-[50px]" />
+      <h1 className="mt-4 text-[56px] max-lg:text-[48px]">
+        Today&apos;s Special
+      </h1>
     </div>
 
-    <div className="flex max-lg:flex-wrap justify-between w-full items-start mt-10 gap-10">
-      <div className="lg:w-1/3 flex flex-col  items-center justify-between">
-        <p className="text-white font-cormorant text-[38px]  ">Wine & Beer</p>
-        <div className="mt-10 w-full flex flex-col items-center justify-start ">
+    <div className="mt-10 flex w-full items-start justify-between gap-10 max-lg:flex-wrap">
+      <div className="flex flex-col items-center  justify-between lg:w-1/3">
+        <p className="font-cormorant text-[38px] text-white  ">Wine & Beer</p>
+        <div className="mt-10 flex w-full flex-col items-center justify-start ">
           {wines.map((wine, index) => (
             <MenuItem
               key={wine.title + index}
@@ -29,13 +33,13 @@ const SpecialMenu = () => (
         </div>
       </div>
 
-      <div className="lg:w-1/3 flex justify-center">
+      <div className="flex justify-center lg:w-1/3">
         <img src={Menu} width={300} alt="menu__img" />
       </div>
 
-      <div className="lg:w-1/3 flex flex-col  items-center justify-between">
-        <p className="text-white font-cormorant text-[38px] ">Cocktails</p>
-        <div className="mt-10 w-full flex flex-col items-center justify-start">
+      <div className="flex flex-col items-center  justify-between lg:w-1/3">
+        <p className="font-cormorant text-[38px] text-white ">Cocktails</p>
+        <div className="mt-10 flex w-full flex-col items-center justify-start">
           {cocktails.map((cocktail, index) => (
             <MenuItem
               key={cocktail.title + index}
@@ -51,7 +55,7 @@ const SpecialMenu = () => (
     <div className="mt-8">
       <button
         type="button"
-        className="bg-golden text-black font-extrabold py-2 px-4 hover:bg-white hover:text-black"
+        className="bg-golden px-4 py-2 font-extrabold text-black hover:bg-white hover:text-black"
       >
         View More
       </button>

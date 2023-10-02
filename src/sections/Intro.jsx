@@ -16,11 +16,11 @@ const Intro = () => {
           loop
           controls={false}
           muted
-          className="z-0 object-fit"
+          className="object-fit z-0"
         />
-        <div className="absolute flex items-center justify-center z-10">
+        <div className="absolute z-10 flex items-center justify-center">
           <div
-            className="p-10 rounded-full bg-[rgba(0,0,0,0.45)]"
+            className="rounded-full bg-[rgba(0,0,0,0.45)] p-10"
             onClick={() => {
               setPlayVideo(!playVideo);
               if (playVideo) {
@@ -31,9 +31,9 @@ const Intro = () => {
             }}
           >
             {playVideo ? (
-              <BsPauseFill className="text-white text-[70px]" />
+              <BsPauseFill className="text-[70px] text-white" />
             ) : (
-              <BsFillPlayFill className="text-white text-[70px]" />
+              <BsFillPlayFill className="text-[70px] text-white" />
             )}
           </div>
         </div>

@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from "react-feather";
 
 const Carousel = ({ carouselImages }) => {
   const scrollRef = useRef(null);
-  const imageWidth = 300; 
+  const imageWidth = 300;
 
   const scroll = (direction) => {
     const { current } = scrollRef;
@@ -15,7 +15,7 @@ const Carousel = ({ carouselImages }) => {
     } else {
       newScrollLeft = current.scrollLeft + imageWidth;
     }
- 
+
     current.scrollTo({
       left: newScrollLeft,
       behavior: "smooth",
@@ -30,25 +30,25 @@ const Carousel = ({ carouselImages }) => {
   //   return () => {
   //     clearInterval(interval);
   //   };
-  // }, []); 
+  // }, []);
 
   return (
-    <div id="carousel-container" className="overflow-hidden relative">
+    <div id="carousel-container" className="relative overflow-hidden">
       <div
         id="image-container"
-        className="flex gap-10 overflow-auto hide_scroll"
+        className="hide_scroll flex gap-10 overflow-auto"
         ref={scrollRef}
       >
         {carouselImages.map((slide, index) => (
           <div
             id="image-card"
-            className="relative group hover:cursor-pointer"
+            className="group relative hover:cursor-pointer"
             key={`carousel-image-${index}`}
           >
             <img
               src={slide}
               alt="carousel-image"
-              className="rounded-xl min-w-[301px] max-w-[302px] min-h-[447px] max-h-[448px] object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-70"
+              className="max-h-[448px] min-h-[447px] min-w-[301px] max-w-[302px] rounded-xl object-cover transition-opacity duration-300 ease-in-out group-hover:opacity-70"
             />
             <div
               id="parent-logo-container"
@@ -63,15 +63,15 @@ const Carousel = ({ carouselImages }) => {
           </div>
         ))}
       </div>
-      <div className="absolute bottom-96 inset-0 flex items-end justify-between pointer-events-auto">
+      <div className="pointer-events-auto absolute inset-0 bottom-96 flex items-end justify-between">
         <ChevronLeft
           size={40}
-          className="bg-white opacity-50 hover:opacity-100 text-golden p-2 animate-pulse cursor-pointer hover:bg-white hover:animate-none hover:text-black hover:border-2 hover:border-black hover:border-l-0 transition ease-in-out duration-400"
+          className="duration-400 animate-pulse cursor-pointer bg-white p-2 text-golden opacity-50 transition ease-in-out hover:animate-none hover:border-2 hover:border-l-0 hover:border-black hover:bg-white hover:text-black hover:opacity-100"
           onClick={() => scroll("left")}
         />
         <ChevronRight
           size={40}
-          className="bg-white  opacity-50 hover:opacity-100 text-golden p-2 animate-pulse cursor-pointer hover:bg-white hover:animate-none hover:text-black hover:border-2 hover:border-black hover:border-r-0 transition ease-in-out duration-400 "
+          className="duration-400  animate-pulse cursor-pointer bg-white p-2 text-golden opacity-50 transition ease-in-out hover:animate-none hover:border-2 hover:border-r-0 hover:border-black hover:bg-white hover:text-black hover:opacity-100 "
           onClick={() => scroll("right")}
         />
       </div>

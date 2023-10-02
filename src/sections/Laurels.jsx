@@ -2,27 +2,30 @@ import { laurels, spoon } from "../assets";
 import { awards } from "../constants";
 
 const AwardCard = ({ award: { imgUrl, title, subtitle } }) => (
-  <div className="flex gap-6 items-start justify-between" id="award-card-div">
+  <div className="flex items-start justify-between gap-6" id="award-card-div">
     <img src={imgUrl} alt="awards" width={100} />
-    <div className="flex flex-col justify-between items-start h-full">
+    <div className="flex h-full flex-col items-start justify-between">
       <p className="font-cormorant text-[33px] leading-[35px]">{title}</p>
-      <p className="font-alt text-[rgba(255,255,255,0.85)] text-[15px] leading-[25px] mt-4">{subtitle}</p>
+      <p className="mt-4 font-alt text-[15px] leading-[25px] text-[rgba(255,255,255,0.85)]">
+        {subtitle}
+      </p>
     </div>
   </div>
 );
 
 const Laurels = () => (
   <div
-    className="py-40 padding-x granite_bg text-golden font-cormorant"
+    className="padding-x granite_bg py-40 font-cormorant text-golden"
     id="awards-section"
   >
-    <div className="lg:padding-x lg:gap-4 flex max-lg:flex-col justify-start items-center max-lg:items-start">
-      <div className="lg:w-3/5 flex flex-col justify-start items-start">
-        <div className="flex flex-row  w-full justify-between items-start gap-10">
+    <div className="lg:padding-x flex items-center justify-start max-lg:flex-col max-lg:items-start lg:gap-4">
+      <div className="flex flex-col items-start justify-start lg:w-3/5">
+        <div className="flex w-full  flex-row items-start justify-between gap-10">
           <div>
-            <h2 className="text-white text-[24px]">Awards & Recognition</h2>
+            <h2 className="text-[24px] text-white">Awards & Recognition</h2>
             <img src={spoon} alt="spoon-icon" width={50} />
-            <h1 className="font-cormorant text-[62px]">Our Laurels</h1></div>
+            <h1 className="font-cormorant text-[62px]">Our Laurels</h1>
+          </div>
           <div className="lg:hidden">
             <img src={laurels} alt="laurels_img" width={300} />
           </div>
@@ -33,7 +36,7 @@ const Laurels = () => (
           ))}
         </div>
       </div>
-      <div className="max-lg:hidden lg:w-2/5 flex items-center justify-center">
+      <div className="flex items-center justify-center max-lg:hidden lg:w-2/5">
         <img src={laurels} alt="laurels_img" width={500} />
       </div>
     </div>
