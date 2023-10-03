@@ -1,13 +1,14 @@
 import React, { useState, useRef } from "react";
 import { BsFillPlayFill, BsPauseFill } from "react-icons/bs";
 import { meal } from "../assets";
+import NewsTicker from "../components/NewsTicker";
 
 const Intro = () => {
   const [playVideo, setPlayVideo] = useState(false);
   const vidRef = useRef();
 
   return (
-    <section id="intro-vid-section" className="">
+    <section id="intro-vid-section" className="relative">
       <div className="relative flex items-center justify-center">
         <video
           ref={vidRef}
@@ -38,6 +39,9 @@ const Intro = () => {
           </div>
         </div>
       </div>
+      {/* <div className="absolute bottom-0">
+        <NewsTicker />
+      </div> */}
     </section>
   );
 };

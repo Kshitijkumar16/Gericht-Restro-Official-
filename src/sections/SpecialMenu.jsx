@@ -1,11 +1,11 @@
 import React from "react";
-import { MenuItem } from "../components";
+import { MenuItem, SpinLogo } from "../components";
 import { Menu, spoon } from "../assets";
 import { cocktails, wines } from "../constants";
 
 const SpecialMenu = () => (
   <section
-    className=" flex flex-col items-center justify-center pb-40 pt-12 font-cormorant text-golden max-lg:py-24"
+    className="relative flex flex-col items-center justify-center py-40  font-cormorant text-golden max-lg:py-24"
     id="menu-section"
   >
     <div className="flex flex-col items-center justify-start">
@@ -60,6 +60,7 @@ const SpecialMenu = () => (
         View More
       </button>
     </div>
+    {/* <div className="absolute -top-20 left-10"><SpinLogo/></div> */}
   </section>
 );
 

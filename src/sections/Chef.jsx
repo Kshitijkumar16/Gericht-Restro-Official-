@@ -1,10 +1,11 @@
 import React from "react";
 
 import { chef, quote, sign, spoon } from "../assets";
+import { SpinLogo } from "../components";
 
 const Chef = () => (
-  <section className="granite_bg lg:padding-x pb-40 pt-40 font-cormorant text-white">
-    <div className="padding-x flex items-center justify-between ">
+  <section className="granite_bg lg:padding-x relative pb-40 pt-40 font-cormorant text-white">
+    <div className="padding-x  flex items-center justify-between ">
       <div className=" flex items-center justify-center lg:w-6/12">
         <img src={chef} alt="chef_image" className="w-[420px]" />
       </div>
@@ -36,6 +37,10 @@ const Chef = () => (
           <img src={sign} alt="sign_image" width={350} className="mt-6" />
         </div>
       </div>
+    </div>
+
+    <div className="absolute -top-20 left-10">
+      <SpinLogo />
     </div>
   </section>
 );

@@ -1,11 +1,11 @@
 import { gallery01, gallery02, gallery03, gallery04, spoon } from "../assets";
-import { Carousel } from "../components";
+import { Carousel, SpinLogo } from "../components";
 
 const Gallery = () => {
   const carouselImages = [gallery01, gallery02, gallery03, gallery04];
 
   return (
-    <section className=" py-40 font-cormorant text-golden">
+    <section className="relative py-40 font-cormorant text-golden">
       <div className=" flex items-center justify-between gap-10 max-md:flex-col">
         <div className="w-1/2">
           <h1 className="text-[30px] text-white ">Instagram</h1>
@@ -30,6 +30,7 @@ const Gallery = () => {
           <Carousel carouselImages={carouselImages} />
         </div>
       </div>
+      <div className="absolute -top-20 -left-20"><SpinLogo/></div>
     </section>
   );
 };

@@ -14,16 +14,16 @@ const FindUs = () => (
           Street A Bunglow, WallStreet Lane Right, Atlantis, NAM-0R
         </p>
         <p className="mt-10 font-cormorant text-[32px]">Opening Hours</p>
-        <p className="mt-4 font-alt text-white ">
-          Mon - Fri: 10:00 am - 02:00 am
+        <p className=" capitalize mt-4 font-alt text-white ">
+          MON - FRI:  10:00 am - 02:00 am
         </p>
-        <p className="mt-4 font-alt text-white">
-          Sat - Sun: 10:00 am - 03:00 am
+        <p className=" capitalize mt-4 font-alt text-white">
+          SAT - SUN: 10:00 am - 03:00 am
         </p>
       </div>
       <button
         type="button"
-        className="transiton-bg mt-10 bg-golden px-5 py-2 font-cormorant font-extrabold text-black duration-500 ease-in-out hover:bg-white"
+        className="shine transiton-bg mt-10 bg-golden px-5 py-2 font-cormorant font-extrabold text-black duration-500 ease-in-out hover:bg-white"
       >
         Visit Us
       </button>

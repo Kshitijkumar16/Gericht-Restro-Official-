@@ -16,6 +16,20 @@ export default {
             transform: "translateY(0)",
           },
         },
+        blob: {
+          "0%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+          "33%": {
+            transform: "translate(20px, -30px) scale(1.2)",
+          },
+          "66%": {
+            trasnform: "translate(-30px, 20px) scale(0.8)",
+          },
+          "100%": {
+            transform: "translate(0px, 0px) scale(1)",
+          },
+        },
       },
       colors: {
         golden: "#DCCA87",
@@ -29,11 +43,13 @@ export default {
       },
       animation: {
         pulse: "pulse 5s ease-in-out infinite",
+        spin: "spin 17s linear infinite",
+        blob: "blob 7s infinite",
       },
       boxShadow: {
-        'sh_gold': "0px 0px 15px 3px #DCCA87",
+        sh_gold: "0px 0px 15px 3px #DCCA87",
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };

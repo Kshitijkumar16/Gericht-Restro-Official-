@@ -1,9 +1,10 @@
 import React from "react";
 import { G, knife, spoon } from "../assets";
+import { SpinLogo } from "../components";
 
 const AboutUs = () => (
   <section
-    className={`granite_bg padding-x relative py-40 font-cormorant text-golden`}
+    className={`granite_bg padding-x relative py-24 pb-12 font-cormorant text-golden`}
     id="about-section"
   >
     <div className="absolute inset-0 z-0 flex items-center justify-center ">
@@ -62,6 +63,9 @@ const AboutUs = () => (
           Know More
         </button>
       </div>
+    </div>
+    <div className="absolute -top-20 right-10">
+      <SpinLogo />
     </div>
   </section>
 );

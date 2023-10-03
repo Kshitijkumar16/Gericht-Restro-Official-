@@ -52,7 +52,7 @@ const App = () => {
 				<section className=''>
 					<FindUs />
 				</section>
-				<section className='lg:padding-x'>
+				<section className=''>
 					<Footer />
 				</section>
 			</div>

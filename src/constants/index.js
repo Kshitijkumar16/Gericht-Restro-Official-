@@ -101,31 +101,34 @@ export const nav_linkss = [
 
 export const footerLinks = [
   {
-    title: "Products",
+    title: "Know More",
     links: [
-      { name: "Air Force 1", link: "/" },
-      { name: "Air Max 1", link: "/" },
-      { name: "Air Jordan 1", link: "/" },
-      { name: "Air Force 2", link: "/" },
-      { name: "Nike Waffle Racer", link: "/" },
-      { name: "Nike Cortez", link: "/" },
-    ],
-  },
-  {
-    title: "Help",
-    links: [
-      { name: "About us", link: "/" },
-      { name: "FAQs", link: "/" },
-      { name: "How it works", link: "/" },
-      { name: "Privacy policy", link: "/" },
-      { name: "Payment policy", link: "/" },
+      { key: "1", name: "Menu", link: "/" },
+      { key: "2", name: "Chefs", link: "/" },
+      { key: "4", name: "Gallery", link: "/" },
+      { key: "3", name: "Reservations", link: "/" },
+      { key: "5", name: "Private Events", link: "/" },
     ],
   },
   {
     title: "Get in touch",
     links: [
-      { name: "customer@stryde.com", link: "mailto:customer@stryde.com" },
-      { name: "0712-123-234", link: "tel:0712212343" },
+      {
+        key: "1",
+        name: "customer@gericht.com",
+        link: "mailto:customer@gericht.com",
+      },
+      { key: "2", name: "0712-123-234", link: "tel:0712212343" },
+    ],
+  },
+  {
+    title: "Help",
+    links: [
+      { key: "1", name: "About", link: "/" },
+      { key: "2", name: "Map", link: "/" },
+      { key: "3", name: "FAQs", link: "/" },
+      { key: "4", name: "Terms & Policy", link: "/" },
+      { key: "5", name: "Payment policy", link: "/" },
     ],
   },
 ];

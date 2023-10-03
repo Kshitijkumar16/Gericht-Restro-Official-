@@ -25,3 +25,6 @@ export { default as instagram } from "./instagram.svg";
 export { default as twitter } from "./twitter.svg";
 export { default as facebook } from "./facebook.svg";
 export { default as hamLogo } from "./hamb-logo.png";
+export { default as topBg } from "./top-bg.png";
+export { default as footerImg } from "./footer-image.png";
+export { default as circleLogo } from "./logo.png";
