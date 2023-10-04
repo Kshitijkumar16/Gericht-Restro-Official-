@@ -8,14 +8,6 @@ export default {
           "slideBottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
       },
       keyframes: {
-        slideBottom: {
-          "0%": {
-            transform: "translateY(-25%)",
-          },
-          "100%": {
-            transform: "translateY(0)",
-          },
-        },
         blob: {
           "0%": {
             transform: "translate(0px, 0px) scale(1)",
@@ -28,6 +20,14 @@ export default {
           },
           "100%": {
             transform: "translate(0px, 0px) scale(1)",
+          },
+        },
+        tickerAni: {
+          from: {
+            transform: "translateX(0%)",
+          },
+          to: {
+            transform: "translateX(-100%)",
           },
         },
       },
@@ -45,6 +45,7 @@ export default {
         pulse: "pulse 5s ease-in-out infinite",
         spin: "spin 17s linear infinite",
         blob: "blob 7s infinite",
+        tickerAni: "tickerAni 30s linear infinite",
       },
       boxShadow: {
         sh_gold: "0px 0px 15px 3px #DCCA87",

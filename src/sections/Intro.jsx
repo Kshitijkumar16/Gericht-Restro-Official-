@@ -8,7 +8,7 @@ const Intro = () => {
   const vidRef = useRef();
 
   return (
-    <section id="intro-vid-section" className="relative">
+    <section id="intro-vid-section" className="relative overflow-hidden">
       <div className="relative flex items-center justify-center">
         <video
           ref={vidRef}
@@ -17,7 +17,7 @@ const Intro = () => {
           loop
           controls={false}
           muted
-          className="object-fit z-0"
+          className="object-fit z-0 "
         />
         <div className="absolute z-10 flex items-center justify-center">
           <div
@@ -39,9 +39,9 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      {/* <div className="absolute bottom-0">
+      <div className="absolute bottom-0 ">
         <NewsTicker />
-      </div> */}
+      </div>
     </section>
   );
 };

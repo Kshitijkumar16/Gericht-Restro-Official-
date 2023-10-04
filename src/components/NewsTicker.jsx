@@ -1,20 +1,38 @@
+import React from "react";
 
-const newsItems = [
-  "Breaking news 1",
-  "Important update 2",
-  "Exciting announcement 3",
-  // Add more news items as needed
-];
+const newsItems = ["Gericht", "2023", "Gericht", "2023", "Gericht", "2023"];
 
 const NewsTicker = () => {
+
+  const concatNewsItems = [...newsItems, ...newsItems, ...newsItems]
+
   return (
-    <div className="news-ticker bg-gray-900 flex items-center justify-center py-2 text-white">
-      <div className="ticker-container overflow-hidden">
-        {newsItems.map((item, index) => (
-          <div key={index} className="ticker-item mr-8 inline-block">
-            {item}
-          </div>
-        ))}
+    <div className="bg-white py-4 ">
+      <div className=" flex border-4">
+        <div className="animate-tickerAni flex ">
+          {concatNewsItems.map((item, index) => (
+            <div className=" ">
+              <div
+                key={index}
+                className="font-cormorant text-[32px] font-extrabold tracking-wider text-black px-16"
+              >
+                {item}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className=" animate-tickerAni flex ">
+          {concatNewsItems.map((item, index) => (
+            <div className="">
+              <div
+                key={index}
+                className="font-cormorant text-[32px] font-extrabold tracking-wider text-black px-16"
+              >
+                {item}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
