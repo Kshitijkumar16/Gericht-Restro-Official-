@@ -92,11 +92,8 @@ export const awards = [
 ];
 
 export const nav_linkss = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
   { href: "#menu", label: "Menu" },
-  { href: "#awards", label: "Awards" },
-  { href: "#contact", label: "Contact" },
+  { href: "#about", label: "About" },
 ];
 
 export const footerLinks = [

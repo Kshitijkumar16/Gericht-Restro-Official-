@@ -28,3 +28,6 @@ export { default as hamLogo } from "./hamb-logo.png";
 export { default as topBg } from "./top-bg.png";
 export { default as footerImg } from "./footer-image.png";
 export { default as circleLogo } from "./logo.png";
+export { default as herobg1 } from "./herobg1.png";
+export { default as fd3 } from "./fd3.png";
+export { default as fd1 } from "./fd1.png";

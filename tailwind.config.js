@@ -43,12 +43,16 @@ export default {
       },
       animation: {
         pulse: "pulse 5s ease-in-out infinite",
-        spin: "spin 17s linear infinite",
+        spin: "spin 17s linear infinite ",
+        spinR: "spin 17s linear infinite reverse",
         blob: "blob 7s infinite",
         tickerAni: "tickerAni 30s linear infinite",
       },
       boxShadow: {
         sh_gold: "0px 0px 15px 3px #DCCA87",
+        bg_gold: "0px 0px 4px 1px #DCCA87",
+        bg_white: "0px 0px 4px 1px #FFFFFF",
+
       },
     },
     plugins: [],

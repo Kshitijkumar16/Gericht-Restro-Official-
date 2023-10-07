@@ -73,7 +73,7 @@ const Footer = () => (
                 <div key={link.key} className="relative">
                   <a
                     href={link.link}
-                    className="cursor-pointer text-[18px] leading-[30px] transition-all duration-300 hover:scale-105 hover:text-white"
+                    className="cursor-pointer text-[24px] leading-[38px] transition-all duration-300 hover:scale-105 hover:text-white"
                   >
                     {link.name}
                   </a>

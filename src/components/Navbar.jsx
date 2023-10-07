@@ -8,11 +8,10 @@ import { gericht, hamLogo } from "../assets";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
-    <nav className="lg:padding-x flex items-center justify-between pb-8 pt-12 font-alt text-golden">
+    <nav className="flex items-center justify-between pt-12 pb-8 padding-x font-alt text-golden">
       <div
         id="logo-div"
-        className="flex items-center justify-between rounded-lg shadow-sh_gold
-      "
+        className="flex items-center justify-between rounded-lg cursor-pointer shadow-sh_gold "
       >
         <img
           src={gericht}
@@ -25,35 +24,45 @@ const Navbar = () => {
 
       <div
         id="desktop-navbar"
-        className=" flex items-center justify-center gap-28 max-2xl:hidden"
+        className="flex items-start justify-end flex-1 gap-16 max-2xl:hidden"
       >
         {nav_linkss.map((item) => (
-          <div key={item.label}>
+          <div key={item.label} className="relative font-cormorant text-[22px] top-2">
             <a
               href={item.href}
-              className=" p-2 font-cormorant text-xl font-bold transition-all duration-300 ease-in-out hover:border-y-[0.5px] hover:border-golden"
+              className=" flex flex-col text-golden transition-all duration-500 ease-in-out after:absolute after:bottom-0 after:left-0 after:right-0
+                      after:h-[1px] after:w-full after:scale-x-0 after:rounded-lg  after:bg-golden 
+                      after:opacity-0 after:transition-all
+                      after:duration-300 after:ease-in after:content-[''] hover:after:scale-x-100 hover:after:opacity-100 "
             >
               {item.label}
             </a>
           </div>
         ))}
+
+        <button
+          type="button"
+          className="rounded-full bg-black bg-opacity-50 px-4 py-3 font-alt text-[18px] font-bold text-golden shadow-bg_gold transition-all duration-300 ease-in-out hover:shadow-sh_gold  max-lg:px-0 max-lg:text-[15px]"
+        >
+          Book Table
+        </button>
       </div>
 
-      <div id="side-overlay-div" className="text-crimson 2xl:hidden">
+      {/* <div id="side-overlay-div" className="text-crimson 2xl:hidden">
         <img src={hamLogo} width={20} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
-          <div className="z-5 fixed left-0 top-0 z-50 flex h-screen w-full items-center justify-center bg-black text-golden transition-all duration-500 ease-in-out ">
+          <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-screen transition-all duration-500 ease-in-out bg-black z-5 text-golden ">
             <div className="relative border-2 border-golden p-[200px]">
               <MdOutlineRestaurantMenu
                 fontSize={27}
-                className="absolute right-10 top-10 cursor-pointer"
+                className="absolute cursor-pointer right-10 top-10"
                 onClick={() => setToggleMenu(false)}
               />
-              <div className="  ">
+              <div className="">
                 {nav_linkss.map((link) => (
                   <div className="p-6 text-center font-cormorant text-3xl font-extrabold transition-[2s]">
                     <a
-                      className="duration-400 hover:text-crimson"
+                      className=" duration-400 hover:text-crimson"
                       href={link.href}
                       onClick={() => setToggleMenu(false)}
                     >
@@ -65,29 +74,7 @@ const Navbar = () => {
             </div>
           </div>
         )}
-      </div>
-
-      <div
-        id="login-div"
-        className="flex items-center gap-3 max-lg:justify-end lg:justify-between"
-      >
-        <button
-          type="button"
-          className="rounded-md bg-golden px-3 py-2 font-extrabold text-black transition-all duration-300 ease-in-out hover:py-3 max-lg:px-2 max-lg:font-bold"
-        >
-          Log In
-        </button>
-        <div className="h-[40px] max-w-[2px] bg-golden text-transparent">
-          sup
-        </div>
-        <button
-          type="button"
-          className="p-2 text-[18px] font-bold text-golden transition-all duration-300 ease-in-out hover:border-y-[0.5px] max-lg:px-0 max-lg:text-[15px]"
-        >
-          Book Table
-        </button>
-        <div />
-      </div>
+      </div> */}
     </nav>
   );
 };

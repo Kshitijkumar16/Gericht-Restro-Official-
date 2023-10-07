@@ -17,7 +17,7 @@ const Intro = () => {
           loop
           controls={false}
           muted
-          className="object-fit z-0 "
+          className="z-0 object-fit "
         />
         <div className="absolute z-10 flex items-center justify-center">
           <div
@@ -38,9 +38,6 @@ const Intro = () => {
             )}
           </div>
         </div>
-      </div>
-      <div className="absolute bottom-0 ">
-        <NewsTicker />
       </div>
     </section>
   );

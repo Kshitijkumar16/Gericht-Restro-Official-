@@ -1,32 +1,31 @@
 import React from "react";
 
-const newsItems = ["Gericht", "2023", "Gericht", "2023", "Gericht", "2023"];
+const newsItems = ["Gericht", "2024", "Gericht", "2024", "Gericht", "2024"];
 
 const NewsTicker = () => {
-
-  const concatNewsItems = [...newsItems, ...newsItems, ...newsItems]
+  const concatNewsItems = [...newsItems, ...newsItems, ...newsItems];
 
   return (
-    <div className="bg-white py-4 ">
-      <div className=" flex border-4">
-        <div className="animate-tickerAni flex ">
+    <div className="py-4 bg-white ">
+      <div className="flex border-y-8">
+        <div className="flex py-1 animate-tickerAni">
           {concatNewsItems.map((item, index) => (
-            <div className=" ">
+            <div className="">
               <div
                 key={index}
-                className="font-cormorant text-[32px] font-extrabold tracking-wider text-black px-16"
+                className="px-16 font-cormorant text-[42px] font-extrabold uppercase leading-[47px]  tracking-wider text-black"
               >
                 {item}
               </div>
             </div>
           ))}
         </div>
-        <div className=" animate-tickerAni flex ">
+        <div className="flex py-1 animate-tickerAni">
           {concatNewsItems.map((item, index) => (
             <div className="">
               <div
                 key={index}
-                className="font-cormorant text-[32px] font-extrabold tracking-wider text-black px-16"
+                className="px-16 font-cormorant text-[42px] font-extrabold uppercase leading-[47px]  tracking-wider text-black"
               >
                 {item}
               </div>
