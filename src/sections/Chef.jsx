@@ -4,9 +4,9 @@ import { chef, quote, sign, spoon } from "../assets";
 import { SpinLogo } from "../components";
 
 const Chef = () => (
-  <section className="granite_bg lg:padding-x relative pb-40 pt-40 font-cormorant text-white">
-    <div className="padding-x  flex items-center justify-between ">
-      <div className=" flex items-center justify-center lg:w-6/12">
+  <section className="relative pt-40 pb-40 text-white granite_bg lg:padding-x font-cormorant">
+    <div className="flex items-center justify-between padding-x ">
+      <div className="flex items-center justify-center  lg:w-6/12">
         <img src={chef} alt="chef_image" className="w-[420px]" />
       </div>
       <div className="flex flex-col items-start justify-between lg:w-6/12 ">
@@ -39,7 +39,7 @@ const Chef = () => (
       </div>
     </div>
 
-    <div className="absolute -top-20 left-10">
+    <div className="absolute -top-20 right-10">
       <SpinLogo />
     </div>
   </section>

@@ -3,3 +3,4 @@ export { default as SpinLogo } from "./SpinLogo";
 export { default as Navbar } from "./Navbar";
 export { default as Carousel } from "./Carousel";
 export { default as MenuItem } from "./MenuItem";
+export { default as InfoSection } from "./InfoSection";

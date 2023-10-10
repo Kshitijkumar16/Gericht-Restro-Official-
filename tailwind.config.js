@@ -40,11 +40,15 @@ export default {
       fontFamily: {
         cormorant: ["Cormorant Upright", "serif"],
         alt: ["Open Sans", "sans-serif"],
+        Bigelow: ["Bigelow Rules", "cursive"],
+        Manrope: ["Manrope", "sans-serif"],
+        Montserrat: ["Montserrat", "sans-serif"],
       },
       animation: {
         pulse: "pulse 5s ease-in-out infinite",
         spin: "spin 17s linear infinite ",
         spinR: "spin 17s linear infinite reverse",
+        spinS: "spin 60s linear infinite",
         blob: "blob 7s infinite",
         tickerAni: "tickerAni 30s linear infinite",
       },
@@ -52,7 +56,6 @@ export default {
         sh_gold: "0px 0px 15px 3px #DCCA87",
         bg_gold: "0px 0px 4px 1px #DCCA87",
         bg_white: "0px 0px 4px 1px #FFFFFF",
-
       },
     },
     plugins: [],

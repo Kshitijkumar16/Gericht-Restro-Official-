@@ -1,4 +1,4 @@
-export { default as AboutUs } from "./AboutUs";
+export { default as Goal } from "./Goal";
 export { default as Chef } from './Chef';
 export { default as FindUs } from './FindUs';
 export { default as Footer } from './Footer';

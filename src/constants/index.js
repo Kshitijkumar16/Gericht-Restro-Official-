@@ -8,61 +8,142 @@ import {
   twitter,
 } from "../assets";
 
-export const wines = [
+export const AsianCuisine = [
   {
-    title: "Chapel Hill Shiraz",
-    price: "$56",
-    tags: "AU | Bottle",
-  },
-  {
-    title: "Catena Malbee",
-    price: "$59",
-    tags: "AU | Bottle",
-  },
-  {
-    title: "La Vieillw Rose",
-    price: "$44",
-    tags: "FR | 750 ml",
-  },
-  {
-    title: "Rhino Pale Ale",
-    price: "$31",
-    tags: "CA | 750 ml",
-  },
-  {
-    title: "Irish Guinness",
-    price: "$26",
-    tags: "IE | 750 ml",
+    title: "Asian Cuisine",
+    dishes: [
+      {
+        key: "2",
+        dishName: "Tonkotsu Ramen",
+        price: "400",
+        description:
+          "Unique ramen consisting of rich pork broth, fresh noodles, soft-yolk eggs that melts in the mouth",
+      },
+      {
+        key: "3",
+        dishName: "Shrimp Shumai",
+        price: "600",
+        description:
+          "Tasty staple dim sum made with ginger and garlic shrimp, water chestnuts, served as dumplings",
+      },
+      {
+        key: "4",
+        dishName: "Miso Ramen",
+        price: "350",
+        description:
+          "miso along with chicken stock, vegetables, and ground pork in a thick and rich soup",
+      },
+      {
+        key: "5",
+        dishName: "House Special Soup",
+        price: "500",
+        description:
+          "Includes crab meat, shrimp, chicken, with sliced roast pork, vegetables, and wontons",
+      },
+      {
+        key: "1",
+        dishName: "Chicken Noodle Soup",
+        price: "550",
+        description:
+          "Egg noodles and bits of chicken cooked in a rich stock, this classic never goes out of style",
+      },
+    ],
   },
 ];
 
-export const cocktails = [
+export const IndianCuisine = [
   {
-    title: "Aperol Sprtiz",
-    price: "$20",
-    tags: "Aperol | Villa Marchesi prosecco | soda | 30 ml",
-  },
-  {
-    title: "Dark 'N' Stormy",
-    price: "$16",
-    tags: "Dark rum | Ginger beer | Slice of lime",
-  },
-  {
-    title: "Daiquiri",
-    price: "$10",
-    tags: "Rum | Citrus juice | Sugar",
-  },
-  {
-    title: "Old Fashioned",
-    price: "$31",
-    tags: "Bourbon | Brown sugar | Angostura Bitters",
-  },
-  {
-    title: "Negroni",
-    price: "$26",
-    tags: "Gin | Sweet Vermouth | Campari | Orange garnish",
+    title: "Indian Cuisine",
+
+    dishes: [
+      {
+        key: "2",
+        dishName: "Chicken Biryani",
+        price: "450",
+        description:
+          "Juicy marinated chicken & basmati rice slow cooked together in layers served alongside raita",
+      },
+      {
+        key: "3",
+        dishName: "Paneer Butter Masala",
+        price: "300",
+        description:
+          "Rich & creamy wiht House special spice mix, filled with bite sized tomatos, cashews with butter",
+      },
+      {
+        key: "4",
+        dishName: "Veg Kolhapuri",
+        price: "250",
+        description:
+          "A delicious spicy mixed vegetables dish with freshly sorted vegetables prepared on tawa",
+      },
+      {
+        key: "5",
+        dishName: "Dal Tadka",
+        price: "250",
+        description:
+          "Smooth and creamy dal tempered with extra special tadka with a smoky charcoal flavour",
+      },
+      {
+        key: "1",
+        dishName: "House Special Thali",
+        price: "400",
+        description:
+          "Mix Veg with garlic naan, alongside biryani and raita. Served with papad, pickels & chutney",
+      },
+    ],
   },
 ];
+
+export const ContinentalCuisine = [
+  {
+    title: "Continental",
+
+    dishes: [
+      {
+        key: "2",
+        dishName: "Mexican Pizza (8 inch)",
+        price: "400",
+        description:
+          "Tortillas sandwiched with beans and jalapenos topped with tomato sauce and cheddar cheese",
+      },
+      {
+        key: "3",
+        dishName: "Mushroom Bruschetta",
+        price: "350",
+        description:
+          "Toasted baguette slice topped with cherry tomato, mozzarella, balasmic pearls and parsley foam",
+      },
+      {
+        key: "4",
+        dishName: "Chicken & Potato Casserole",
+        price: "200",
+        description:
+          " Juicy chicken, tasty potatoes, and veggies mixed together to make a simple yet filling dinner",
+      },
+      {
+        key: "5",
+        dishName: "Roasted meat Salad",
+        price: "400",
+        description:
+          "Crispy shreds of lamb paired with creamy feta, crunchy red onion and tangy roasted tomatoes",
+      },
+      {
+        key: "1",
+        dishName: "Paneer Steaks",
+        price: "250",
+        description:
+          "Pan fried cottage cheese patties baked with cheese and tomatoes, with house special spice mix",
+      },
+    ],
+  },
+];
+
+export const cuisineData = {
+  asian: AsianCuisine,
+  indian: IndianCuisine,
+  continental: ContinentalCuisine,
+};
 
 export const awards = [
   {
@@ -94,6 +175,24 @@ export const awards = [
 export const nav_linkss = [
   { href: "#menu", label: "Menu" },
   { href: "#about", label: "About" },
+];
+
+export const infoCards = [
+  {
+    key: "1",
+    h1: "Choose your ingridients ",
+    p: "Control what goes into food. Your server will ask your preferences while taking the order.",
+  },
+  {
+    key: "2",
+    h1: "Custom toppings & dips ",
+    p: "Let the server know your favorite add ons and we will take care of them.",
+  },
+  {
+    key: "3",
+    h1: "Choose cooking method",
+    p: "You can let us know how you want your food to be cooked, we have a variety of cooking styles.",
+  },
 ];
 
 export const footerLinks = [
