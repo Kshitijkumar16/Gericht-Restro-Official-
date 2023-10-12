@@ -3,6 +3,7 @@ import { motion as m } from "framer-motion";
 
 import { cuisineData } from "../constants";
 import { ChevronRight } from "react-feather";
+import { gr1, gr2, gr3 } from "../assets";
 
 const SpecialMenu = () => {
   const [activeCuisine, setActiveCuisine] = useState("asian");
@@ -108,9 +109,32 @@ const SpecialMenu = () => {
       </div>
 
       <div className="pointer-events-none absolute -left-[190px] bottom-[390px]">
-        <p className="rotate-90 font-Montserrat text-[72px] font-extrabold tracking-[70px] text-golden/70 ">
+        <p className="rotate-90 font-Montserrat text-[72px] font-extrabold tracking-[70px] text-golden ">
           MENU
         </p>
+      </div>
+      <div id="absolute-food-menu-image" className="opacity-95 absolute -top-[200px] z-0 -left-[100px]">
+        {activeCuisine === "asian" ? (
+          <div>
+            <img src={gr2} alt="" width={380}/>
+          </div>
+        ) : (
+          ""
+        )}
+        {activeCuisine === "indian" ? (
+          <div>
+            <img src={gr3} alt="indian-thali" width={600} />
+          </div>
+        ) : (
+          ""
+        )}
+        {activeCuisine === "continental" ? (
+          <div>
+            <img src={gr1} alt="pizza" width={530} />
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </section>
   );

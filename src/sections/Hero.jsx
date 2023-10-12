@@ -1,14 +1,13 @@
-import { BsFacebook, BsInstagram, BsTwitch, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import { fd3, spoon } from "../assets";
-import { SpinLogo } from "../components";
 
 const Header = () => {
   return (
     <section
-      className="relative pb-40 lg:padding-x font-cormorant text-golden max-lg:pb-24 max-lg:pt-10"
+      className="lg:padding-x relative pb-40 font-cormorant text-golden max-lg:pb-24 max-lg:pt-10"
       id="hero-section"
     >
-      <div className="z-10 flex items-end justify-between gap-24 padding-x">
+      <div className="padding-x z-10 flex items-end justify-between gap-24">
         <div
           id="main-hero-div"
           className="relative flex w-[75%] flex-col items-start justify-between overflow-hidden rounded-xl bg-gradient-to-r from-black/100 via-black/80 to-black/30 px-10 py-6 pb-8 shadow-bg_gold"
@@ -40,35 +39,21 @@ const Header = () => {
           </button>
         </div>
 
-        <div id="hero-image-slider" className="w-[25%] z-10 ">
-          <div className="relative flex items-center justify-center w-full -bottom-[50px] -right-[100px]">
-            {/* <div className="h-[300px] w-[300px] bg-[url('./assets/fd3.png')]  bg-center"></div> */}
+        <div id="hero-image-slider" className="z-10 w-[25%] ">
+          <div className="relative -bottom-[50px] -right-[100px] flex w-full items-center justify-center">
             <img src={fd3} alt="" className="min-w-[800px] " />
           </div>
-
-          {/* <div id="reservation-div" className="flex flex-col items-start justify-center w-full px-10 py-8 rounded-xl bg-black/50 shadow-bg_gold">
-            <h1 className="text-[28px] font-bold  uppercase tracking-wide">
-              Find your <span className="text-white">table</span> for any{" "}
-              <span className="">occasion!</span>
-            </h1>
-            <button
-              type="button"
-              className="mt-8 rounded-full p-2 px-5 text-[25px] font-bold shadow-bg_gold hover:shadow-sh_gold"
-            >
-              Find a reservation
-            </button>
-          </div> */}
         </div>
       </div>
 
       <div
         id="vertical-socials"
-        className="absolute flex flex-col items-center justify-center h-full gap-3 overflow-hidden -top-20 left-10"
+        className="absolute -top-20 left-10 flex h-full flex-col items-center justify-center gap-3 overflow-hidden"
       >
         <div className="h-[370px] w-[2px] bg-golden"></div>
         <BsFacebook
           size={23}
-          className="transition-all duration-300 ease-in cursor-pointer hover:text-white"
+          className="cursor-pointer transition-all duration-300 ease-in hover:text-white"
         />
         <div className="h-[30px] w-[2px] bg-golden"></div>
         <BsInstagram size={23} className="cursor-pointer hover:text-white " />
@@ -77,7 +62,7 @@ const Header = () => {
         <div className="h-[30px] w-[2px] bg-golden"></div>
       </div>
 
-      <div className="absolute -bottom-[500px] -right-[500px] pointer-events-none h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 z-0 "></div>
+      <div className="pointer-events-none absolute -bottom-[500px] -right-[500px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
     </section>
   );
 };

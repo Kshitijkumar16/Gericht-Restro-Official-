@@ -1,11 +1,10 @@
 import React from "react";
 import InfoCard from "./InfoCard";
 import { infoCards } from "../constants";
-import { fd1, fd2, spoon } from "../assets";
 
 const InfoSection = () => {
   return (
-    <section className="relative z-50 py-32 padding-x font-cormorant text-golden">
+    <section className="relative z-50 py-32 pb-64 padding-x font-cormorant text-golden">
       <div className="flex flex-col p-20 gap-36 rounded-xl bg-gradient-to-r from-black via-black/80 to-black/30 shadow-bg_gold">
         <div className="flex items-start justify-start gap-28">
           <div className="w-[55%]">

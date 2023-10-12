@@ -6,7 +6,7 @@ import { SpinLogo } from "../components";
 const Chef = () => (
   <section className="relative pt-40 pb-40 text-white granite_bg lg:padding-x font-cormorant">
     <div className="flex items-center justify-between padding-x ">
-      <div className="flex items-center justify-center  lg:w-6/12">
+      <div className="flex items-center justify-center lg:w-6/12">
         <img src={chef} alt="chef_image" className="w-[420px]" />
       </div>
       <div className="flex flex-col items-start justify-between lg:w-6/12 ">
@@ -39,8 +39,8 @@ const Chef = () => (
       </div>
     </div>
 
-    <div className="absolute -top-20 right-10">
-      <SpinLogo />
+    <div className="absolute  text-golden -top-20 right-10">
+      <SpinLogo  />
     </div>
   </section>
 );

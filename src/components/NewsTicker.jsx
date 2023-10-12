@@ -7,10 +7,10 @@ const NewsTicker = () => {
 
   return (
     <div className="py-4 bg-white ">
-      <div className="flex border-y-8">
-        <div className="flex py-1 animate-tickerAni">
+      <div id="ticker-div" className="flex border-y-8">
+        <div id="ticker-subdiv" className="flex py-1 animate-tickerAni">
           {concatNewsItems.map((item, index) => (
-            <div className="">
+            <div id="container" className="">
               <div
                 key={index}
                 className="px-16 font-cormorant text-[42px] font-extrabold uppercase leading-[47px]  tracking-wider text-black"
@@ -20,7 +20,7 @@ const NewsTicker = () => {
             </div>
           ))}
         </div>
-        <div className="flex py-1 animate-tickerAni">
+        <div id="ticker-subdiv" className="flex py-1 animate-tickerAni">
           {concatNewsItems.map((item, index) => (
             <div className="">
               <div

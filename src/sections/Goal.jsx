@@ -46,36 +46,7 @@ const AboutUs = () => (
         </div>
       </div>
     </div>
-    {/* 
-    <div className="lg:padding-x relative z-10 flex items-center justify-start gap-10 pb-24 pt-12  max-lg:max-h-[250px]">
-      
-
-      <div className="flex justify-center w-1/11">
-        <img src={knife} alt="about_knife" />
-      </div>
-
-      <div
-        id="about-history-div"
-        className="flex flex-col items-start justify-between mt-16 text-left w-5/11 "
-      >
-        <h1 className="font-cormorant text-[72px] max-lg:text-[50px] ">
-          Our History
-        </h1>
-        <img src={spoon} alt="about_spoon" className="" />
-        <p className="mt-16 font-alt max-lg:font-cormorant">
-          Gericht Restaurant, founded in 2005 by Emily and David Bennett, brings
-          the art of gastronomy to life. Inspired by their travels, they've
-          crafted a dining haven where patrons relish not just food but
-          unforgettable moments.
-        </p>
-        <button
-          type="button"
-          className="px-6 py-2 mt-16 font-extrabold text-black bg-golden hover:bg-white"
-        >
-          Know More
-        </button>
-      </div>
-    </div> */}
+    
     <div className="absolute -top-20 right-10">
       <SpinLogo />
     </div>

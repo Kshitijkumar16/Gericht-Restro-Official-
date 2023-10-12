@@ -6,6 +6,18 @@ import {
   facebook,
   instagram,
   twitter,
+  gallery01,
+  gallery02,
+  gallery03,
+  gallery04,
+  gallery05,
+  gallery06,
+  gallery07,
+  gallery08,
+  gallery09,
+  gallery10,
+  gallery11,
+  gallery12,
 } from "../assets";
 
 export const AsianCuisine = [
@@ -193,6 +205,21 @@ export const infoCards = [
     h1: "Choose cooking method",
     p: "You can let us know how you want your food to be cooked, we have a variety of cooking styles.",
   },
+];
+
+export const galleryImages = [
+  { key: "1", imgUrl: gallery01 },
+  { key: "2", imgUrl: gallery02 },
+  { key: "3", imgUrl: gallery03 },
+  { key: "4", imgUrl: gallery04 },
+  { key: "5", imgUrl: gallery05 },
+  { key: "6", imgUrl: gallery06 },
+  { key: "7", imgUrl: gallery07 },
+  { key: "8", imgUrl: gallery08 },
+  { key: "9", imgUrl: gallery09 },
+  { key: "10", imgUrl: gallery10 },
+  { key: "11", imgUrl: gallery11 },
+  { key: "12", imgUrl: gallery12 },
 ];
 
 export const footerLinks = [

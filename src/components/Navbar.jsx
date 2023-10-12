@@ -1,9 +1,7 @@
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdOutlineRestaurantMenu } from "react-icons/md";
 
 import { nav_linkss } from "../constants";
-import { gericht, hamLogo } from "../assets";
+import { gericht } from "../assets";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
@@ -27,7 +25,10 @@ const Navbar = () => {
         className="flex items-start justify-end flex-1 gap-16 max-2xl:hidden"
       >
         {nav_linkss.map((item) => (
-          <div key={item.label} className="relative font-cormorant text-[22px] top-2">
+          <div
+            key={item.label}
+            className="relative top-2 font-cormorant text-[22px]"
+          >
             <a
               href={item.href}
               className=" flex flex-col text-golden transition-all duration-500 ease-in-out after:absolute after:bottom-0 after:left-0 after:right-0
@@ -47,34 +48,6 @@ const Navbar = () => {
           Book Table
         </button>
       </div>
-
-      {/* <div id="side-overlay-div" className="text-crimson 2xl:hidden">
-        <img src={hamLogo} width={20} onClick={() => setToggleMenu(true)} />
-        {toggleMenu && (
-          <div className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-screen transition-all duration-500 ease-in-out bg-black z-5 text-golden ">
-            <div className="relative border-2 border-golden p-[200px]">
-              <MdOutlineRestaurantMenu
-                fontSize={27}
-                className="absolute cursor-pointer right-10 top-10"
-                onClick={() => setToggleMenu(false)}
-              />
-              <div className="">
-                {nav_linkss.map((link) => (
-                  <div className="p-6 text-center font-cormorant text-3xl font-extrabold transition-[2s]">
-                    <a
-                      className=" duration-400 hover:text-crimson"
-                      href={link.href}
-                      onClick={() => setToggleMenu(false)}
-                    >
-                      {link.label}
-                    </a>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        )}
-      </div> */}
     </nav>
   );
 };

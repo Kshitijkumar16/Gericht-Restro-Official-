@@ -45,12 +45,13 @@ export default {
         Montserrat: ["Montserrat", "sans-serif"],
       },
       animation: {
-        pulse: "pulse 5s ease-in-out infinite",
         spin: "spin 17s linear infinite ",
         spinR: "spin 17s linear infinite reverse",
         spinS: "spin 60s linear infinite",
         blob: "blob 7s infinite",
         tickerAni: "tickerAni 30s linear infinite",
+        tickerG: "tickerAni 55s linear infinite",
+        tickerGr: "tickerAni 55s linear infinite reverse",
       },
       boxShadow: {
         sh_gold: "0px 0px 15px 3px #DCCA87",
