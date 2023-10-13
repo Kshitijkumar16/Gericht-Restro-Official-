@@ -72,8 +72,8 @@ const SpecialMenu = () => {
             <div className="h-[65px] w-[1px] bg-golden"></div>
           </div>
         </div>
-        {cuisineData[activeCuisine].map((cuisine) => (
-          <div className="relative z-10 flex w-[70%] flex-col rounded-lg border-[0.5px] bg-[url('./assets/menubg3.png')] from-black via-black/90 to-black/0 bg-cover bg-center px-20 pb-12 shadow-bg_gold">
+        {cuisineData[activeCuisine].map((cuisine, i) => (
+          <div key={i} className="relative z-10 flex w-[70%] flex-col rounded-lg border-[0.5px] bg-[url('./assets/menubg3.png')] from-black via-black/90 to-black/0 bg-cover bg-center px-20 pb-12 shadow-bg_gold">
             <div className="flex items-center justify-center py-10">
               <h1 className=" font-extrathin font-alt text-[24px] uppercase tracking-[30px] text-golden/50 ">
                 {cuisine.title}
@@ -82,8 +82,8 @@ const SpecialMenu = () => {
             <div
               className={`pointer-events-none grid grid-flow-row place-content-start gap-y-8 `}
             >
-              {cuisine.dishes.map((dish) => (
-                <div className="grid grid-cols-3 row-span-1 ">
+              {cuisine.dishes.map((dish, i) => (
+                <div key={i} className="grid grid-cols-3 row-span-1 ">
                   <div className="flex flex-col col-span-2">
                     <h1 className=" text-[32px]  font-extrabold uppercase tracking-widest">
                       {dish.dishName}

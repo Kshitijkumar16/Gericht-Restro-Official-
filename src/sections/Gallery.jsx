@@ -1,61 +1,130 @@
-import { BsInstagram } from "react-icons/bs";
 import { galleryImages } from "../constants";
 import GallerySlider from "../components/GallerySlider";
+import { useState } from "react";
 
 const Gallery = () => {
+  const [activeSlider, setactiveSlider] = useState("slider-one");
+  const [activeImg, setactiveImg] = useState("");
+
   return (
-    <section className="flex flex-col gap-2 py-2">
-      <div id="ticker-one" className="group flex gap-2">
+    <section className="flex flex-col gap-2 py-2 ">
+      <div
+        id="slider-one"
+        onMouseEnter={() => setactiveSlider("slider-one")}
+        className={`group relative flex gap-2 ${
+          activeSlider === "slider-one" ? "z-20" : "z-10"
+        }`}
+      >
         <div
-          id="subdiv-ticker-one"
+          id="subdiv-slider-one"
           className="group-hover:pause flex animate-tickerG gap-2"
         >
-          {galleryImages.map((image, i) => (
-            <GallerySlider image={image} index={i} />
+          {galleryImages.map((image) => (
+            <div
+              key={image.key}
+              onMouseEnter={() => setactiveImg(image.key)}
+              className={`relative ${
+                activeImg === image.key ? "z-30" : "z-20"
+              }`}
+            >
+              <GallerySlider image={image} />
+            </div>
           ))}
         </div>
         <div
-          id="subdiv-ticker-one"
+          id="subdiv-slider-one"
           className="group-hover:pause flex animate-tickerG gap-2"
         >
-          {galleryImages.map((image, i) => (
-            <GallerySlider image={image} index={i} />
+          {galleryImages.map((image) => (
+            <div
+              key={image.key}
+              onMouseEnter={() => setactiveImg(image.key)}
+              className={`relative ${
+                activeImg === image.key ? "z-30" : "z-20"
+              }`}
+            >
+              <GallerySlider image={image} />
+            </div>
           ))}
         </div>
       </div>
-      <div id="ticker-two" className="group flex gap-2">
+      <div
+        id="slider-two"
+        onMouseEnter={() => setactiveSlider("slider-two")}
+        className={`group relative flex gap-2 ${
+          activeSlider === "slider-two" ? "z-20" : "z-10"
+        }`}
+      >
         <div
-          id="subdiv-ticker-two"
+          id="subdiv-slider-two"
           className="group-hover:pause flex animate-tickerGr gap-2"
         >
-          {galleryImages.map((image, i) => (
-            <GallerySlider image={image} index={i} />
+          {galleryImages.map((image) => (
+            <div
+              key={image.key}
+              onMouseEnter={() => setactiveImg(image.key)}
+              className={`relative ${
+                activeImg === image.key ? "z-30" : "z-20"
+              }`}
+            >
+              <GallerySlider image={image} />
+            </div>
           ))}
         </div>
         <div
-          id="subdiv-ticker-two"
+          id="subdiv-slider-two"
           className="group-hover:pause flex animate-tickerGr gap-2"
         >
-          {galleryImages.map((image, i) => (
-            <GallerySlider image={image} index={i} />
+          {galleryImages.map((image) => (
+            <div
+              key={image.key}
+              onMouseEnter={() => setactiveImg(image.key)}
+              className={`relative ${
+                activeImg === image.key ? "z-30" : "z-20"
+              }`}
+            >
+              <GallerySlider image={image} />
+            </div>
           ))}
         </div>
       </div>
-      <div id="ticker-three" className="group flex gap-2">
+      <div
+        id="slider-three"
+        onMouseEnter={() => setactiveSlider("slider-three")}
+        className={`group relative flex gap-2 ${
+          activeSlider === "slider-three" ? "z-20" : "z-10"
+        }`}
+      >
         <div
           id="subdiv-ticker-three"
           className="group-hover:pause flex animate-tickerG gap-2"
         >
-          {galleryImages.map((image, i) => (
-            <GallerySlider image={image} index={i} />
+          {galleryImages.map((image) => (
+            <div
+              key={image.key}
+              onMouseEnter={() => setactiveImg(image.key)}
+              className={`relative ${
+                activeImg === image.key ? "z-30" : "z-20"
+              }`}
+            >
+              <GallerySlider image={image} />
+            </div>
           ))}
         </div>
         <div
           id="subdiv-ticker-three"
           className="group-hover:pause flex animate-tickerG gap-2"
         >
-          {galleryImages.map((image, i) => (
-            <GallerySlider image={image} index={i} />
+          {galleryImages.map((image) => (
+            <div
+              key={image.key}
+              onMouseEnter={() => setactiveImg(image.key)}
+              className={`relative ${
+                activeImg === image.key ? "z-30" : "z-20"
+              }`}
+            >
+              <GallerySlider image={image} />
+            </div>
           ))}
         </div>
       </div>

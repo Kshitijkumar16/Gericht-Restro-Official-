@@ -39,7 +39,7 @@ const App = () => {
         <SpecialMenu />
       </section>
 
-      <section className="">
+      <section className="relative z-10">
         <Gallery />
       </section>
 

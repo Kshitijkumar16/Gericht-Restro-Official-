@@ -25,8 +25,8 @@ const InfoSection = () => {
           </div>
         </div>
         <div className="flex items-center justify-between flex-1 gap-10 ">
-          {infoCards.map((card) => (
-            <div className="w-1/3 transition-all duration-300 hover:shadow-sh_gold rounded-xl hover:bg-black">
+          {infoCards.map((card, i) => (
+            <div key={i} className="w-1/3 transition-all duration-300 hover:shadow-sh_gold rounded-xl hover:bg-black">
               <InfoCard key={card.key} h1={card.h1} p={card.p} />
             </div>
           ))}

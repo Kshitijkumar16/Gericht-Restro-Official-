@@ -10,9 +10,9 @@ const Footer = () => (
   >
     <div
       id="footer-logo-div"
-      className="flex w-full items-start justify-between pt-40"
+      className="flex items-start justify-between w-full pt-40"
     >
-      <div className="flex flex-col items-start justify-between  ">
+      <div className="flex flex-col items-start justify-between ">
         <div
           id="footer-logo-image-div"
           className="relative rounded-2xl border-[4px] cursor-pointer shadow-sh_gold"
@@ -21,9 +21,9 @@ const Footer = () => (
             src={gericht}
             alt="footer_logo"
             width={300}
-            className=" rounded-2xl bg-black px-6 py-3" 
+            className="px-6 py-3 bg-black rounded-2xl" 
           />
-          <div className="animate-blob pointer-events-none absolute h-40 w-64 bg-golden opacity-30 blur-3xl delay-300"></div>
+          <div className="absolute w-64 h-40 delay-300 pointer-events-none animate-blob bg-golden opacity-30 blur-3xl"></div>
         </div>
         <p className="mt-8 text-[18px] text-xl font-bold tracking-wide text-white">
           &quot;The best way to find yourself is to lose yourself in the service
@@ -32,15 +32,15 @@ const Footer = () => (
         <div className="mt-10 flex gap-[107px]">
           <FiFacebook
             size={30}
-            className=" cursor-pointer transition-colors duration-300 ease-in-out hover:text-white"
+            className="transition-colors duration-300 ease-in-out cursor-pointer hover:text-white"
           />
           <FiTwitter
             size={30}
-            className=" cursor-pointer  transition-colors duration-300 ease-in-out hover:text-white"
+            className="transition-colors duration-300 ease-in-out cursor-pointer hover:text-white"
           />
           <FiInstagram
             size={30}
-            className=" cursor-pointer transition-colors duration-300 ease-in-out hover:text-white"
+            className="transition-colors duration-300 ease-in-out cursor-pointer hover:text-white"
           />
         </div>
       </div>
@@ -57,19 +57,19 @@ const Footer = () => (
 
     <div
       id="footer-links-div"
-      className="mb-12 mt-24 flex  w-full items-start justify-between gap-10 pt-12"
+      className="flex items-start justify-between w-full gap-10 pt-12 mt-24 mb-12"
     >
       {footerLinks.map((section, i) => (
-        <div className="flex flex-1 flex-col items-center justify-between ">
+        <div key={i} className="flex flex-col items-center justify-between flex-1 ">
           <h1 className="border-b-2 border-golden  text-[42px] text-white">
             {section.title}
           </h1>
           <div
             key={`${section.title}+${i}`}
-            className="mt-8 flex flex-col items-center"
+            className="flex flex-col items-center mt-8"
           >
-            {section.links.map((link) => (
-              <div>
+            {section.links.map((link, i) => (
+              <div key={i}>
                 <div key={link.key} className="relative">
                   <a
                     href={link.link}
@@ -78,7 +78,7 @@ const Footer = () => (
                     {link.name}
                   </a>
                 </div>
-                <div className="animate-blob pointer-events-none absolute h-24 w-24 bg-golden opacity-30 blur-3xl delay-300"></div>
+                <div className="absolute w-24 h-24 delay-300 pointer-events-none animate-blob bg-golden opacity-30 blur-3xl"></div>
               </div>
             ))}
           </div>
@@ -88,7 +88,7 @@ const Footer = () => (
 
     <div
       id="footer-botto  m-line"
-      className="my-4 flex w-full items-center justify-center"
+      className="flex items-center justify-center w-full my-4"
     >
       <p className="font-alt">2021 Gericht. All Rights reserved.</p>
     </div>

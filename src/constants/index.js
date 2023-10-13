@@ -208,18 +208,18 @@ export const infoCards = [
 ];
 
 export const galleryImages = [
-  { key: "1", imgUrl: gallery01 },
-  { key: "2", imgUrl: gallery02 },
-  { key: "3", imgUrl: gallery03 },
-  { key: "4", imgUrl: gallery04 },
-  { key: "5", imgUrl: gallery05 },
-  { key: "6", imgUrl: gallery06 },
-  { key: "7", imgUrl: gallery07 },
-  { key: "8", imgUrl: gallery08 },
-  { key: "9", imgUrl: gallery09 },
-  { key: "10", imgUrl: gallery10 },
-  { key: "11", imgUrl: gallery11 },
-  { key: "12", imgUrl: gallery12 },
+  { key: "i1", imgUrl: gallery01 },
+  { key: "i2", imgUrl: gallery02 },
+  { key: "i3", imgUrl: gallery03 },
+  { key: "i4", imgUrl: gallery04 },
+  { key: "i5", imgUrl: gallery05 },
+  { key: "i6", imgUrl: gallery06 },
+  { key: "i7", imgUrl: gallery07 },
+  { key: "i8", imgUrl: gallery08 },
+  { key: "i9", imgUrl: gallery09 },
+  { key: "i10", imgUrl: gallery10 },
+  { key: "i11", imgUrl: gallery11 },
+  { key: "i12", imgUrl: gallery12 },
 ];
 
 export const footerLinks = [

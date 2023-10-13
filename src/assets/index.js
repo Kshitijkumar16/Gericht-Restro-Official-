@@ -1,12 +1,11 @@
 export { default as bg } from "./bg.png";
 export { default as chef } from "./chef.png";
 export { default as G } from "./G.png";
-export { default as knife } from "./knife.png";
 export { default as logo } from "./logo.png";
-export { default as Menu } from "./menu.png";
+
 export { default as overlaybg } from "./overlaybg.png";
 export { default as spoon } from "./spoon.svg";
-export { default as welcome } from "./welcome.png";
+
 export { default as findus } from "./findus.png";
 export { default as laurels } from "./laurels.png";
 export { default as award01 } from "./award01.png";
@@ -24,12 +23,11 @@ export { default as hamLogo } from "./hamb-logo.png";
 export { default as topBg } from "./top-bg.png";
 export { default as footerImg } from "./footer-image.png";
 export { default as circleLogo } from "./logo.png";
-export { default as herobg1 } from "./herobg1.png";
-export { default as fd3 } from "./fd3.png";
-export { default as fd1 } from "./fd1.png";
+
 export { default as knife1 } from "./knife1.png";
 export { default as hm1 } from "./hm1.png";
-export { default as menubg1 } from "./menubg1.png";
+
+export { default as fd3 } from "./fd3.png";
 export { default as fd2 } from "./fd2t.png";
 export { default as ramen } from "./ramen.png";
 export { default as pizza } from "./pizza.png";

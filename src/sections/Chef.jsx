@@ -39,7 +39,7 @@ const Chef = () => (
       </div>
     </div>
 
-    <div className="absolute  text-golden -top-20 right-10">
+    <div className="absolute text-golden top-10 right-10">
       <SpinLogo  />
     </div>
   </section>
