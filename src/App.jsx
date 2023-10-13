@@ -16,8 +16,8 @@ import {
 const App = () => {
   return (
     <main className=" max-w-[2000px] overflow-hidden scroll-smooth bg-black">
-      <div className="bg-left-top bg-no-repeat bg-cover hero_bg">
-        <section className="pb-24 padding-x bg-gradient-to-b from-black via-black/70 to-transparent">
+      <div className="hero_bg bg-cover bg-left-top bg-no-repeat">
+        <section className="padding-x bg-gradient-to-b from-black via-black/70 to-transparent pb-24">
           <Navbar />
         </section>
         <section className="">
@@ -43,17 +43,22 @@ const App = () => {
         <Gallery />
       </section>
 
-      <section className="">
+      <section className="padding-x relative ">
         <Chef />
+        <div className="pointer-events-none absolute -left-[500px] -top-[200px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
+        <div className="pointer-events-none absolute -right-[500px] -bottom-[500px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
       </section>
 
-      <section className="">
+      <section className="relative z-10 border-y-2 border-golden">
+        {/* <NewsTicker /> */}
         <Intro />
-        <NewsTicker />
+        {/* <NewsTicker /> */}
       </section>
 
-      <section className="">
+      <section className="padding-x relative">
         <Laurels />
+        <div className="pointer-events-none absolute -left-[500px] -top-[300px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
+        <div className="pointer-events-none absolute -right-[500px] -bottom-[300px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
       </section>
 
       <section className="">
