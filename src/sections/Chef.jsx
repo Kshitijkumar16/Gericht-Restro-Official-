@@ -1,14 +1,14 @@
 import React from "react";
 
-import { chef1, chef2, sign1, sign2, spoon } from "../assets";
+import { chef1, chef2, fd4, sign1, sign2, spoon } from "../assets";
 import { SpinLogo } from "../components";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const Chef = () => (
-  <section className="lg:padding-x relative  z-20 overflow-hidden  py-64  font-cormorant text-golden">
+  <section className="lg:padding-x relative z-20 overflow-hidden  py-64  font-cormorant text-golden">
     <div
       id="wrapper-div"
-      className="relative flex flex-col items-center justify-between rounded-xl bg-gradient-to-br from-black via-black/80 to-black/20 p-16 shadow-bg_gold"
+      className="relative flex flex-col items-center justify-between rounded-xl bg-gradient-to-br from-black/80 via-black/80 to-black/20 p-16 shadow-bg_gold"
     >
       <div
         id="top-div"
@@ -99,6 +99,7 @@ const Chef = () => (
         <SpinLogo />
       </div>
     </div>
+
   </section>
 );
 

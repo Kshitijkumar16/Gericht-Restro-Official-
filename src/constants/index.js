@@ -250,7 +250,7 @@ export const footerLinks = [
       { key: "1", name: "About", link: "/" },
       { key: "2", name: "Map", link: "/" },
       { key: "3", name: "FAQs", link: "/" },
-      { key: "4", name: "Terms & Policy", link: "/" },
+      // { key: "4", name: "Terms & Policy", link: "/" },
       { key: "5", name: "Payment policy", link: "/" },
     ],
   },

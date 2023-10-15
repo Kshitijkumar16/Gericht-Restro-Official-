@@ -19,6 +19,10 @@ export { default as hm1 } from "./hm1.png";
 
 export { default as fd3 } from "./fd3.png";
 export { default as fd2 } from "./fd2t.png";
+export { default as fd4 } from "./fd4.png";
+export { default as fd5 } from "./fd5.png";
+export { default as fd6 } from "./fd6.png";
+export { default as fd7 } from "./fd7.png";
 
 export { default as ramen } from "./ramen.png";
 export { default as pizza } from "./pizza.png";
@@ -58,3 +62,7 @@ export { default as footerImg } from "./footer-image.png";
 export { default as instagram } from "./instagram.svg";
 export { default as twitter } from "./twitter.svg";
 export { default as facebook } from "./facebook.svg";
+
+export { default as dining1 } from "./dining1.png";
+
+export { default as chopsticks } from "./chopsticks.png";

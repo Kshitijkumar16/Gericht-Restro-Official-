@@ -1,6 +1,6 @@
 import React from "react";
 
-import { InfoSection, Navbar, NewsTicker } from "./components";
+import { InfoSection, Navbar, NewsTicker, SpinLogo } from "./components";
 import {
   Hero,
   Goal,
@@ -12,6 +12,8 @@ import {
   Laurels,
   SpecialMenu,
 } from "./sections";
+import Reservation from "./components/Reservation";
+import { G, chopsticks, fd4, fd5, fd6, fd7 } from "./assets";
 
 const App = () => {
   return (
@@ -45,8 +47,16 @@ const App = () => {
 
       <section className="padding-x relative ">
         <Chef />
-        <div className="pointer-events-none absolute -left-[500px] -top-[200px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
-        <div className="pointer-events-none absolute -right-[500px] -bottom-[500px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
+        <div className="pointer-events-none absolute -left-[500px] -top-[100px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
+        <div className="pointer-events-none absolute -bottom-[500px] -right-[500px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
+        <div className="absolute -left-[350px] top-16 z-0 opacity-80 ">
+          <img
+            src={fd4}
+            alt="black-dish"
+            width={700}
+            className="animate-spinS object-cover object-center "
+          />
+        </div>
       </section>
 
       <section className="relative z-10 border-y-2 border-golden">
@@ -55,17 +65,60 @@ const App = () => {
         {/* <NewsTicker /> */}
       </section>
 
-      <section className="padding-x relative">
+      <section className="relative py-80 pb-40">
+        {/* <div className="my-20 mb-40 h-[25px] w-[100%] bg-golden/30"></div> */}
         <Laurels />
-        <div className="pointer-events-none absolute -left-[500px] -top-[300px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
-        <div className="pointer-events-none absolute -right-[500px] -bottom-[300px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
+        {/* <div className="pointer-events-none absolute -left-[500px] -top-[300px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div> */}
+        <div className="pointer-events-none absolute -bottom-[300px] -right-[500px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div>
+        <div className="padding-x absolute -left-16 top-32 opacity-50 ">
+          <img
+            src={fd5}
+            alt="food-image"
+            className="animate-spinS rounded-full border-[20px] border-golden "
+          />
+        </div>
+        <div className="absolute right-20 top-28 flex items-end justify-end">
+          <h1 className="font-cormorant text-[82px] font-extrabold uppercase tracking-widest text-golden opacity-30">
+            Awards & Recognition
+          </h1>
+        </div>
       </section>
 
-      <section className="">
+      <section className="padding-x relative">
+        <Reservation />
+        <div className="absolute left-20 top-0 z-0">
+          <img src={G} alt="g-logo" width={600} className="" />
+        </div>
+        <div className="absolute left-48 top-[130px] z-0 ">
+          <img
+            src={fd6}
+            alt="food-image"
+            className="animate-spinS rounded-full"
+          />
+        </div>
+      </section>
+
+      <section className="padding-x relative">
         <FindUs />
+        <div className="absolute -right-10 top-[390px]">
+          <h1 className="mt-1 rotate-90 font-cormorant text-[72px] font-extrabold uppercase tracking-[40px]  text-golden opacity-50">
+            Find Us
+          </h1>
+        </div>
+        <div className="absolute -right-40 top-24 -rotate-45 opacity-50">
+          <img width={800} src={chopsticks} alt="chopsticks" />
+        </div>
+        <div className="absolute z-0 opacity-50 top-[110px] -left-[400px] border-[20px] border-golden/30 rounded-full">
+          <img
+            src={fd7}
+            alt="food-image"
+            className="object-cover object-center animate-spinS"
+          />
+        </div>
+        {/* <div className="pointer-events-none absolute -left-[500px] top-[400px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div> */}
       </section>
 
-      <section className="">
+      <section className="padding-x">
         <Footer />
       </section>
     </main>

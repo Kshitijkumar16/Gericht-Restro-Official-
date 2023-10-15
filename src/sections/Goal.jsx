@@ -8,25 +8,26 @@ const AboutUs = () => (
     className={` padding-x relative bg-gradient-to-r from-[#090909] via-[#151513] to-[#161616] py-16 pb-40 font-cormorant text-golden`}
     id="about-section"
   >
-    <div className="relative z-10 flex items-center justify-start -left-10 ">
+    <div className="relative -left-10 z-10 flex items-center justify-start ">
       <div className="">
         <img src={knife1} alt="knife-image" className="min-h-[400px]" />
       </div>
       <div
         id="about-about-div"
-        className="relative flex flex-col items-start justify-between w-2/3 px-10 py-8 overflow-hidden rounded-xl bg-gradient-to-r from-black via-black/70 to-black/20 shadow-bg_gold"
+        className="relative flex w-2/3 flex-col items-start justify-between overflow-hidden rounded-xl bg-gradient-to-r from-black via-black/70 to-black/20 px-10 py-8 shadow-bg_gold"
       >
         <h1 className="font-cormorant text-[40px] font-extrabold tracking-wider text-white ">
           Our Goal
         </h1>
         <img src={spoon} alt="about_spoon" className="" width={70} />
         <div className="mt-16 w-[75%] text-left text-[30px] leading-[40px] max-lg:font-cormorant">
-          <p className="text-[45px] uppercase leading-[65px] font-extrabold ">
-            Dining isn't just nourishing, but feeding the soul.
+          <p className="text-[45px] font-extrabold uppercase leading-[65px] ">
+            <span className="text-white">"</span> Dining isn't just nourishing,
+            but feeding the soul <span className="text-white">"</span>
           </p>
-          <p className="mt-10">
+          <p className="mt-10 text-white">
             We are committed to creating{" "}
-            <span className="text-white">moments of joy</span> and connection
+            <span className="text-golden">moments of joy</span> and connection
             through our carefully crafted dishes.
           </p>
         </div>
@@ -41,21 +42,22 @@ const AboutUs = () => (
             </div>
           </div>
         </button>
-        <div className="absolute bottom-0 -right-8">
-          <img src={hm1} alt="hotel-manager" className="min-h-[550px]" />
+        <div className="absolute -right-8 bottom-0">
+          <img
+            src={hm1}
+            alt="hotel-manager"
+            width={650}
+            className="relative left-10"
+          />
         </div>
       </div>
     </div>
-    
+
     <div className="absolute -top-20 right-10">
       <SpinLogo />
     </div>
-    <div className="absolute top-0 z-0 flex items-center justify-center left-5 ">
-      <img
-        src={G}
-        alt="G_overlay"
-        className="max-h-[700px]"
-      />
+    <div className="absolute left-5 top-0 z-0 flex items-center justify-center ">
+      <img src={G} alt="G_overlay" className="max-h-[700px]" />
     </div>
     <div className="pointer-events-none absolute -right-[500px] -top-[500px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden "></div>
   </section>
