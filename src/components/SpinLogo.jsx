@@ -9,7 +9,7 @@ const SpinLogo = ({direction = " "}) => {
         src={circleLogo}
         alt="logo"
         width={170}
-        className={`pointer-events-none ${spinClass} rounded-full border-[2px] bg-black p-4`}
+        className={`pointer-events-none ${spinClass} rounded-full border-[2px] bg-black p-4 lap:w-[170px] xl:w-[140px]`}
       />
     </div>
   );

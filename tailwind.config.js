@@ -2,11 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      lap: "1440px",
+      xl: "1280px",
+      lg: "1024px",
+      md: "768px",
+      sm: "640px",
+      xsm: "480px",
+    },
     extend: {
-      animation: {
-        slideBottom:
-          "slideBottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
-      },
       keyframes: {
         blob: {
           "0%": {

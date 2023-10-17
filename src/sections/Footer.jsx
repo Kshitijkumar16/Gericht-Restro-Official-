@@ -6,13 +6,13 @@ import { NewsTicker } from "../components";
 
 const Footer = () => (
   <section
-    className="lg:padding-x flex flex-col items-center justify-start pt-40"
+    className="flex flex-col items-center justify-start lg:padding-x xl:pt-20 lap:pt-32"
     id="footer-section"
   >
-    <div className="flex w-full items-start justify-between gap-24 ">
+    <div className="flex items-start justify-between w-full xl:gap-16 lap:gap-24">
       <div
         id="footer-logo-div"
-        className="flex w-1/6 items-start  justify-between"
+        className="flex items-start justify-between w-1/6"
       >
         <div className="flex flex-col items-start justify-start ">
           <div className=" cursor-pointer rounded-lg border-[4px] shadow-sh_gold">
@@ -20,7 +20,7 @@ const Footer = () => (
               src={gericht}
               alt="footer_logo"
               width={170}
-              className="rounded-lg bg-black p-1 px-2"
+              className="p-1 px-2 bg-black rounded-lg"
             />
           </div>
           {/* <p className="mt-8 font-cormorant text-[18px] text-xl font-bold tracking-wide text-white">
@@ -31,31 +31,31 @@ const Footer = () => (
       </div>
       <div
         id="footer-links-div"
-        className="flex w-3/6 items-start justify-between gap-16 font-cormorant text-white"
+        className="flex items-start justify-between w-3/6 text-white font-cormorant xl:gap-14 lap:gap-16"
       >
         {footerLinks.map((section, i) => (
           <div
             key={i}
-            className="flex flex-1 flex-col items-start justify-between "
+            className="flex flex-col items-start justify-between flex-1 "
           >
-            <h1 className="border-b-2 border-golden  text-[22px] font-bold uppercase tracking-wider">
+            <h1 className="border-b-2 border-golden font-bold uppercase tracking-wider xl:text-[18px] lap:text-[22px]">
               {section.title}
             </h1>
             <div
               key={`${section.title}+${i}`}
-              className="mt-8 flex w-full flex-col items-start"
+              className="flex flex-col items-start w-full xl:mt-6 lap:mt-8"
             >
               {section.links.map((link, i) => (
                 <div key={i}>
                   <div key={link.key} className="relative">
                     <a
                       href={link.link}
-                      className="cursor-pointer text-[18px] leading-[40px] tracking-[2px] transition-all duration-300 hover:text-golden "
+                      className="cursor-pointer leading-[40px] tracking-[2px] transition-all duration-300 hover:text-golden xl:text-[16px] lap:text-[18px] "
                     >
                       {link.name}
                     </a>
                   </div>
-                  {/* <div className="pointer-events-none absolute h-24 w-24 animate-blob bg-golden opacity-30 blur-3xl delay-300"></div> */}
+                  {/* <div className="absolute w-24 h-24 delay-300 pointer-events-none animate-blob bg-golden opacity-30 blur-3xl"></div> */}
                 </div>
               ))}
             </div>
@@ -64,17 +64,17 @@ const Footer = () => (
       </div>
       <div
         id="subscribe-div"
-        className="flex w-2/6 flex-col items-start justify-between font-cormorant text-white/90"
+        className="flex flex-col items-start justify-between w-2/6 font-cormorant text-white/90"
       >
         <div>
-          <h1 className="border-b-2 border-golden text-[22px] font-bold uppercase tracking-wider">
+          <h1 className="border-b-2 border-golden font-bold uppercase tracking-wider xl:text-[18px] lap:text-[22px]">
             Subscribe
           </h1>
           <p className="mt-8 text-[20px] leading-[30px] tracking-[1px]">
             Join our mailing list for the latest updates and promotions.
           </p>
         </div>
-        <div className="mt-8 flex gap-4">
+        <div className="flex gap-4 mt-8">
           <div>
             <input
               type="text"
@@ -95,7 +95,7 @@ const Footer = () => (
           <p className="mt-4 text-[16px] leading-[25px] tracking-[1px]">
             By subscribing, you agree to our{" "}
             <span>
-              <a href="" className=" hover:cursor-pointer hover:text-golden ">
+              <a href="" className=" hover:cursor-pointer hover:text-golden">
                 Privacy Policy
               </a>
             </span>{" "}
@@ -112,9 +112,9 @@ const Footer = () => (
 
     <div
       id="footer-bottom-line"
-      className="mb-20 mt-10 flex w-full justify-between"
+      className="flex justify-between w-full lap:mb-20 xl:mb-16 xl:mt-8 lap:mt-10"
     >
-      <div className="flex items-center justify-start gap-6 font-Montserrat text-white">
+      <div className="flex items-center justify-start gap-6 text-white font-Montserrat">
         <p className="">2024 Gericht. All Rights reserved.</p>
         <p className="hover:cursor-pointer hover:text-golden">
           Terms of Service
@@ -122,18 +122,18 @@ const Footer = () => (
         <p className="hover:cursor-pointer hover:text-golden">Privacy Policy</p>
         <p className="hover:cursor-pointer hover:text-golden">Cookie Policy</p>
       </div>
-      <div className=" flex gap-8">
+      <div className="flex gap-8 ">
         <FiFacebook
           size={25}
-          className="cursor-pointer text-white transition-all duration-300 ease-in-out hover:text-golden"
+          className="cursor-pointer text-white transition-all duration-300 ease-in-out hover:text-golden xl:w-[20px] lap:w-[25px]"
         />
         <FiTwitter
           size={25}
-          className="cursor-pointer text-white transition-all duration-300 ease-in-out hover:text-golden"
+          className="cursor-pointer text-white transition-all duration-300 ease-in-out hover:text-golden xl:w-[20px] lap:w-[25px]"
         />
         <FiInstagram
           size={25}
-          className="cursor-pointer text-white transition-all duration-300 ease-in-out hover:text-golden"
+          className="cursor-pointer text-white transition-all duration-300 ease-in-out hover:text-golden xl:w-[20px] lap:w-[25px]"
         />
       </div>
     </div>

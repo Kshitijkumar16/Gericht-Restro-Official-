@@ -1,3 +1,4 @@
+import { motion as m } from "framer-motion";
 import React from "react";
 
 import { nav_linkss } from "../constants";
@@ -6,10 +7,13 @@ import { gericht } from "../assets";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
-    <nav className="flex items-center justify-between pt-12 pb-8 padding-x font-alt text-golden">
-      <div
+    <nav className="padding-x flex items-center justify-between font-alt text-golden xl:pt-8 lap:pb-8 lap:pt-12">
+      <m.div
+        initial={{ opacity: 0, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
         id="logo-div"
-        className="flex items-center justify-between rounded-lg cursor-pointer shadow-sh_gold "
+        className="flex cursor-pointer items-center justify-between rounded-lg shadow-sh_gold "
       >
         <img
           src={gericht}
@@ -18,11 +22,14 @@ const Navbar = () => {
           alt="Geritch-logo"
           className=" rounded-lg border-[2px] border-golden border-opacity-70 px-3 py-1"
         />
-      </div>
+      </m.div>
 
-      <div
+      <m.div
+        initial={{ opacity: 0, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
         id="desktop-navbar"
-        className="flex items-start justify-end flex-1 gap-16 max-2xl:hidden"
+        className="flex flex-1 items-start justify-end xl:gap-10 lap:gap-16"
       >
         {nav_linkss.map((item) => (
           <div
@@ -43,11 +50,11 @@ const Navbar = () => {
 
         <button
           type="button"
-          className="rounded-full bg-black bg-opacity-50 px-4 py-3 font-alt text-[18px] font-bold text-golden shadow-bg_gold transition-all duration-300 ease-in-out hover:shadow-sh_gold  max-lg:px-0 max-lg:text-[15px]"
+          className="rounded-full bg-black bg-opacity-50 font-alt text-[18px] font-bold text-golden shadow-bg_gold transition-all duration-300 ease-in-out hover:shadow-sh_gold max-lg:px-0 max-lg:text-[15px] xl:px-3 xl:py-2  lap:px-4 lap:py-3"
         >
           Book Table
         </button>
-      </div>
+      </m.div>
     </nav>
   );
 };
