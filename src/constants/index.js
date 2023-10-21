@@ -128,7 +128,7 @@ export const ContinentalCuisine = [
       },
       {
         key: "4",
-        dishName: "Chicken & Potato Casserole",
+        dishName: "Chicken Casserole",
         price: "200",
         description:
           " Juicy chicken, tasty potatoes, and veggies mixed together to make a simple yet filling dinner",

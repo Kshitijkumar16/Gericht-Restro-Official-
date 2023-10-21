@@ -3,12 +3,14 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      lap: "1440px",
-      xl: "1280px",
-      lg: "1024px",
-      md: "768px",
-      sm: "640px",
-      xsm: "480px",
+      "3lap": "1671px",
+      "2lap": "1523px",
+      lap: "1441px",
+      xl: "1281px",
+      lg: "1025px",
+      md: "769px",
+      sm: "641px",
+      xsm: "481px",
     },
     extend: {
       keyframes: {

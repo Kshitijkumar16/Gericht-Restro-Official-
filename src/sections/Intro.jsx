@@ -21,7 +21,7 @@ const Intro = () => {
         />
         <div className="absolute z-10 flex items-center justify-center">
           <div
-            className="rounded-full bg-[rgba(0,0,0,0.45)] lap:p-10 xl:p-8"
+            className="rounded-full bg-[rgba(0,0,0,0.45)] lg:p-5 lap:p-10 xl:p-8"
             onClick={() => {
               setPlayVideo(!playVideo);
               if (playVideo) {

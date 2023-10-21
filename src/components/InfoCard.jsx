@@ -3,12 +3,17 @@ import { spoon } from "../assets";
 
 const InfoCard = ({ h1, p }) => {
   return (
-    <div className="flex lap:h-[270px] flex-col items-start justify-between lap:p-10 xl:p-8 lap:rounded-xl xl:rounded-lg font-cormorant text-golden shadow-bg_gold">
-      <img src={spoon} alt="spoon-icon" width={60} className="mb-1 lap:w-[60px] xl:w-[50px]"/>
-      <h1 className="lap:text-[32px] xl:text-[27px] font-extrabold tracking-wide text-white">
+    <div className="flex flex-col items-start justify-between font-cormorant text-golden shadow-bg_gold lg:rounded-lg xl:rounded-lg lg:p-[28px] xl:p-8 lap:h-[270px] lap:rounded-xl lap:p-10">
+      <img
+        src={spoon}
+        alt="spoon-icon"
+        width={60}
+        className="mb-1 xl:w-[50px] 2lap:w-[60px] lg:w-[45px]"
+      />
+      <h1 className="3lap:text-[32px] font-extrabold tracking-wide text-white lg:text-[22px] xl:text-[25px] ">
         {h1}
       </h1>
-      <p className="lap:mt-8 xl:mt-6 lap:text-[24px] xl:text-[21px] ">{p}</p>
+      <p className="xl:mt-5 xl:text-[20px] lg:mt-4 2lap:mt-8 2lap:text-[24px] ">{p}</p>
     </div>
   );
 };

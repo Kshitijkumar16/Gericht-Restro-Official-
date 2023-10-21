@@ -7,7 +7,7 @@ import { gericht } from "../assets";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
-    <nav className="padding-x flex items-center justify-between font-alt text-golden xl:pt-8 lap:pb-8 lap:pt-12">
+    <nav className="lg:padding-x flex items-center justify-between font-alt text-golden xl:pt-8 lg:pt-[30px] md:pt-6 lap:pb-8 lap:pt-12">
       <m.div
         initial={{ opacity: 0, scale: 1 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -29,12 +29,12 @@ const Navbar = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         id="desktop-navbar"
-        className="flex flex-1 items-start justify-end xl:gap-10 lap:gap-16"
+        className="flex flex-1 items-start justify-end lg:gap-8 xl:gap-10 lap:gap-16"
       >
         {nav_linkss.map((item) => (
           <div
             key={item.label}
-            className="relative top-2 font-cormorant text-[22px]"
+            className="relative top-2 font-cormorant xl:text-[22px] lg:text-[20px]"
           >
             <a
               href={item.href}
@@ -50,7 +50,7 @@ const Navbar = () => {
 
         <button
           type="button"
-          className="rounded-full bg-black bg-opacity-50 font-alt text-[18px] font-bold text-golden shadow-bg_gold transition-all duration-300 ease-in-out hover:shadow-sh_gold max-lg:px-0 max-lg:text-[15px] xl:px-3 xl:py-2  lap:px-4 lap:py-3"
+          className="rounded-full bg-black bg-opacity-50 font-alt xl:text-[18px] lg:text-[16px] font-bold text-golden shadow-bg_gold transition-all duration-300 ease-in-out hover:shadow-sh_gold lg:px-[10px] lg:py-[7px] xl:px-3 xl:py-2  lap:px-4 lap:py-3"
         >
           Book Table
         </button>
