@@ -16,7 +16,7 @@ const SpecialMenu = () => {
 
   return (
     <section
-      className="lg:padding-x relative flex flex-col font-cormorant text-golden lg:pb-28 xl:pb-32 lap:pb-40"
+      className="relative flex flex-col lg:padding-x font-cormorant text-golden lg:pb-28 xl:pb-32 lap:pb-40"
       id="menu-section"
     >
       <div className="flex items-center justify-end">
@@ -28,7 +28,7 @@ const SpecialMenu = () => {
           Signature
         </div>
       </div>
-      <div className="relative flex w-full items-center lg:-left-10 lg:mt-20 lg:justify-start xl:justify-between">
+      <div className="relative flex items-center w-full lg:-left-10 lg:mt-20 lg:justify-start xl:justify-between">
         <div id="nav-div" className="w-[30%]">
           <div
             id="cuisine-selector"
@@ -114,9 +114,9 @@ const SpecialMenu = () => {
                     transition={{ duration: 1 }}
                     staggerChildren={0.2}
                     key={i}
-                    className="row-span-1 grid grid-cols-3 "
+                    className="grid grid-cols-3 row-span-1 "
                   >
-                    <div className="col-span-2 flex flex-col">
+                    <div className="flex flex-col col-span-2">
                       <h1 className=" font-extrabold uppercase lg:text-[20px] lg:tracking-widest xl:text-[28px] lap:text-[32px]">
                         {dish.dishName}
                       </h1>
@@ -124,8 +124,8 @@ const SpecialMenu = () => {
                         {dish.description}
                       </p>
                     </div>
-                    <div className="relative -top-2 col-span-1 place-self-center">
-                      <p className="font-Montserrat tracking-wider">
+                    <div className="relative col-span-1 -top-2 place-self-center">
+                      <p className="tracking-wider font-Montserrat">
                         {dish.price}/-
                       </p>
                     </div>

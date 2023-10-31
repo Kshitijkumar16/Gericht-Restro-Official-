@@ -61,6 +61,7 @@ export default {
       },
       boxShadow: {
         sh_gold: "0px 0px 15px 3px #DCCA87",
+        sh_white: "0px 0px 15px 3px #FFFFFF",
         bg_gold: "0px 0px 4px 1px #DCCA87",
         bg_white: "0px 0px 4px 1px #FFFFFF",
       },

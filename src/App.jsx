@@ -19,8 +19,8 @@ const App = () => {
   return (
     <div className="bg-black">
       <main className=" m-auto max-w-[1800px] overflow-hidden scroll-smooth bg-black">
-        <div className="hero_bg bg-cover bg-left-top bg-no-repeat">
-          <section className="padding-x bg-gradient-to-b from-black via-black/70 to-transparent lg:pb-20 xl:pb-24">
+        <div className="bg-left-top bg-no-repeat bg-cover hero_bg">
+          <section className="padding-x bg-gradient-to-b from-black via-black/70 to-transparent md:pb-14 lg:pb-20 xl:pb-24">
             <Navbar />
           </section>
           <section className="">
@@ -46,7 +46,7 @@ const App = () => {
           <Gallery />
         </section>
 
-        <section className="padding-x relative ">
+        <section className="relative padding-x ">
           <Chef />
           <div className="pointer-events-none absolute z-0 rounded-full border-golden/60 lg:-left-[280px] lg:-top-[60px] lg:h-[560px] lg:w-[560px] lg:border-[25px] xl:-left-[500px] xl:-top-[100px] xl:h-[850px] xl:w-[850px] xl:border-[35px] lap:-left-[500px] lap:-top-[100px] lap:h-[1000px] lap:w-[1000px] lap:border-[40px] "></div>
           <div className="pointer-events-none absolute z-0 rounded-full border-golden/60 lg:-bottom-[350px] lg:-right-[350px] lg:h-[700px] lg:w-[700px] lg:border-[25px] xl:-bottom-[400px] xl:-right-[400px] xl:h-[800px] xl:w-[800px] xl:border-[35px] lap:-bottom-[500px] lap:-right-[500px] lap:h-[1000px] lap:w-[1000px] lap:border-[40px]"></div>
@@ -71,7 +71,7 @@ const App = () => {
           <Laurels />
           {/* <div className="pointer-events-none absolute -left-[500px] -top-[300px] z-0 h-[1000px] w-[1000px] rounded-full border-[40px] border-golden/60 "></div> */}
           <div className="pointer-events-none absolute z-0 rounded-full border-golden/60 lg:-bottom-[150px] lg:-right-[300px] lg:h-[650px] lg:w-[650px] lg:border-[30px] xl:-bottom-[200px] xl:-right-[450px] xl:h-[800px] xl:w-[800px] xl:border-[35px] lap:-bottom-[300px] lap:-right-[500px] lap:h-[1000px] lap:w-[1000px] lap:border-[40px] "></div>
-          <div className="padding-x absolute opacity-50 lg:-left-16 lg:top-20 xl:-left-16 xl:top-28 lap:top-32">
+          <div className="absolute opacity-50 padding-x lg:-left-16 lg:top-20 xl:-left-16 xl:top-28 lap:top-32">
             <img
               src={fd5}
               alt="food-image"
@@ -85,7 +85,7 @@ const App = () => {
           </div>
         </section>
 
-        <section className="padding-x relative">
+        <section className="relative padding-x">
           <Reservation />
           <div className="absolute z-0 lg:-top-[25px] lg:left-16 xl:-top-6 xl:left-24 lap:left-20 lap:top-0">
             <img
@@ -104,7 +104,7 @@ const App = () => {
           </div>
         </section>
 
-        <section className="padding-x relative">
+        <section className="relative padding-x">
           <FindUs />
           <div className="absolute lg:-right-4 lg:top-[250px] xl:-right-6 xl:top-[320px] lap:-right-2 lap:top-[350px]">
             <h1 className=" rotate-90 font-cormorant font-extrabold uppercase text-golden opacity-70 lg:text-[40px] lg:tracking-[20px] xl:text-[55px] xl:tracking-[29px] lap:text-[68px] lap:tracking-[30px]">
