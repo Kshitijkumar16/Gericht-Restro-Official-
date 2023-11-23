@@ -6,15 +6,15 @@ import { motion as m } from "framer-motion";
 
 const AboutUs = () => (
   <section
-    className={` padding-x relative bg-gradient-to-r from-[#090909] via-[#151513] to-[#161616] font-cormorant text-golden lg:py-32 lg:pb-32 xl:py-16 xl:pb-40`}
+    className={` padding-x relative bg-gradient-to-r from-[#090909] via-[#151513] to-[#161616] font-cormorant text-golden md:py-24 lg:py-32 lg:pb-32 xl:py-16 xl:pb-40`}
     id="about-section"
   >
-    <div className="relative z-10 flex items-center justify-start lg:left-1 xl:left-1 lap:-left-10 ">
+    <div className="relative z-10 flex items-center justify-start md:left-1 lg:left-1 xl:left-1 lap:-left-10 ">
       <div className="">
         <img
           src={knife1}
           alt="knife-image"
-          className="md:h-[200px] lg:h-[330px] xl:h-[370px] lap:h-[400px]"
+          className="md:h-[330px] lg:h-[330px] xl:h-[370px] lap:h-[400px]"
         />
       </div>
       <m.div
@@ -22,7 +22,7 @@ const AboutUs = () => (
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         id="about-about-div"
-        className="relative flex lg:w-2/3 flex-col items-start justify-between overflow-hidden rounded-xl bg-gradient-to-r from-black via-black/70 to-black/20 shadow-bg_gold md:px-7 md:py-6 lg:px-[37px] lg:py-[30px] xl:px-10 xl:py-8"
+        className="relative flex flex-col items-start justify-between overflow-hidden rounded-xl bg-gradient-to-r from-black via-black/70 to-black/20 shadow-bg_gold md:w-2/3 md:px-7 md:py-6 lg:px-[37px] lg:py-[30px] xl:px-10 xl:py-8"
       >
         <h1 className="font-cormorant font-extrabold tracking-wider text-white md:text-[25px] lg:text-[30px] xl:text-[35px] lap:text-[40px] ">
           Our Goal
@@ -30,15 +30,15 @@ const AboutUs = () => (
         <img
           src={spoon}
           alt="about_spoon"
-          className="lg:w-[50px] xl:w-[60px] lap:w-[70px] md:w-[45px]"
+          className="md:w-[45px] lg:w-[50px] xl:w-[60px] lap:w-[70px]"
           width={70}
         />
         <div className="w-[75%] text-left md:mt-8 lg:mt-10 xl:mt-12 lap:mt-16 ">
-          <p className="font-extrabold uppercase md:text-[28px] lg:text-[32px] lg:leading-[45px] xl:text-[37px] xl:leading-[50px] lap:text-[45px] lap:leading-[65px]">
+          <p className="font-extrabold uppercase md:text-[25px] lg:text-[32px] lg:leading-[45px] xl:text-[37px] xl:leading-[50px] lap:text-[45px] lap:leading-[65px]">
             <span className="text-white">"</span> Dining isn't just nourishing,
             but feeding the soul <span className="text-white">"</span>
           </p>
-          <p className="text-white md:mt-6 lg:mt-8 lg:text-[22px] lg:leading-[32px] xl:mt-10 xl:text-[24px] xl:leading-[34px] lap:text-[30px]  lap:leading-[40px]">
+          <p className="text-[19px] leading-[28px] text-white md:mt-6 lg:mt-8 lg:text-[22px] lg:leading-[32px] xl:mt-10 xl:text-[24px] xl:leading-[34px] lap:text-[30px]  lap:leading-[40px]">
             We are committed to creating{" "}
             <span className="text-golden">moments of joy</span> and connection
             through our carefully crafted dishes.
@@ -46,9 +46,9 @@ const AboutUs = () => (
         </div>
         <button
           type="button"
-          className="rounded-full font-extrabold shadow-bg_gold hover:shadow-sh_gold lg:mt-10 lg:px-[10px] lg:py-[7px] lg:text-[20px] xl:mt-12 xl:px-4 xl:py-2 xl:text-[22px] lap:mt-16 lap:px-5 lap:py-2 lap:text-[25px]"
+          className="rounded-full font-extrabold shadow-bg_gold hover:shadow-sh_gold md:mt-8 md:px-[8px] md:py-[5px] md:text-[18px] md:pl-4 lg:mt-10 lg:px-[10px] lg:py-[7px] lg:text-[20px] xl:mt-12 xl:px-4 xl:py-2 xl:text-[22px] lap:mt-16 lap:px-5 lap:py-2 lap:text-[25px]"
         >
-          <div className="flex items-center justify-center lg:gap-2 xl:gap-3">
+          <div className="flex items-center justify-center md:gap-[5px] lg:gap-2 xl:gap-3">
             <p>Our Story</p>
             <div className="">
               <ChevronRight />
@@ -66,14 +66,14 @@ const AboutUs = () => (
       </m.div>
     </div>
 
-    <div className="absolute md:right-5 md:-top-12 lg:right-10 lg:-top-14 xl:-top-16 lap:-top-20">
+    <div className="absolute md:-top-12 md:right-5 lg:-top-14 lg:right-10 xl:-top-16 lap:-top-20">
       <SpinLogo />
     </div>
-    <div className="absolute z-0 flex items-center justify-center lg:left-16 lg:top-[80px] xl:top-10 lap:left-5 lap:top-0 ">
+    <div className="absolute z-0 flex items-center justify-center md:left-14 md:top-[45px] lg:left-16 lg:top-[80px] xl:top-10 lap:left-5 lap:top-0 ">
       <img
         src={G}
         alt="G_overlay"
-        className="lg:max-h-[510px] xl:max-h-[530px] lap:max-h-[700px]"
+        className="md:max-h-[450px] lg:max-h-[510px] xl:max-h-[530px] lap:max-h-[700px]"
       />
     </div>
     <div

@@ -5,7 +5,7 @@ import { nav_linkss } from "../constants";
 import { gericht } from "../assets";
 
 const Navbar = () => {
-  const [toggleMenu, setToggleMenu] = React.useState(false);
+  // const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
     <nav className="lg:padding-x flex items-center justify-between font-alt text-golden md:pt-6 lg:pt-[30px] xl:pt-8 lap:pb-8 lap:pt-12">
       <m.div
@@ -13,7 +13,7 @@ const Navbar = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         id="logo-div"
-        className="flex cursor-pointer items-center justify-between rounded-lg shadow-sh_gold "
+        className="flex items-center justify-between rounded-lg cursor-pointer shadow-sh_gold "
       >
         <img
           src={gericht}
@@ -29,7 +29,7 @@ const Navbar = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         id="desktop-navbar"
-        className="flex flex-1 items-start justify-end md:gap-7 lg:gap-8 xl:gap-10 lap:gap-16"
+        className="flex items-start justify-end flex-1 md:gap-7 lg:gap-8 xl:gap-10 lap:gap-16"
       >
         {nav_linkss.map((item) => (
           <div
