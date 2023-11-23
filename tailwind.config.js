@@ -11,6 +11,7 @@ export default {
       md: "769px",
       sm: "641px",
       xsm: "481px",
+      "2xsm": "321px",
     },
     extend: {
       keyframes: {

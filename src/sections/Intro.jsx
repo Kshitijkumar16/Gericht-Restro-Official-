@@ -21,7 +21,7 @@ const Intro = () => {
         />
         <div className="absolute z-10 flex items-center justify-center">
           <div
-            className="rounded-full bg-[rgba(0,0,0,0.45)] md:p-4 lg:p-5 xl:p-8 lap:p-10"
+            className="rounded-full bg-[rgba(0,0,0,0.45)] sm:p-3 md:p-4 lg:p-5 xl:p-8 lap:p-10"
             onClick={() => {
               setPlayVideo(!playVideo);
               if (playVideo) {
@@ -32,9 +32,9 @@ const Intro = () => {
             }}
           >
             {playVideo ? (
-              <BsPauseFill className="text-white md:text-[50px] lg:text-[70px]" />
+              <BsPauseFill className="text-white sm:text-[45px] md:text-[50px] lg:text-[70px]" />
             ) : (
-              <BsFillPlayFill className="text-white md:text-[50px] lg:text-[70px]" />
+              <BsFillPlayFill className="text-white sm:text-[45px] md:text-[50px] lg:text-[70px]" />
             )}
           </div>
         </div>

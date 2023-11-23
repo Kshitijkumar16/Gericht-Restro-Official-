@@ -5,35 +5,35 @@ import { SpinLogo } from "../components";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const Chef = () => (
-  <section className="relative z-20 overflow-hidden md:padding-x font-cormorant text-golden md:py-28 lg:py-32 xl:py-40 lap:py-64">
+  <section className="sm:padding-x relative z-20 overflow-hidden font-cormorant text-golden sm:py-24 md:py-28 lg:py-32 xl:py-40 lap:py-64">
     <div
       id="wrapper-div"
-      className="relative flex flex-col items-center justify-between rounded-xl bg-gradient-to-br from-black/80 via-black/80 to-black/20 shadow-bg_gold md:p-10 lg:p-12 xl:p-16"
+      className="relative flex flex-col items-center justify-between rounded-xl bg-gradient-to-br from-black/80 via-black/80 to-black/20 shadow-bg_gold sm:p-9 md:p-10 lg:p-12 xl:p-16"
     >
       <div
         id="top-div"
-        className="flex items-start justify-start w-full md:gap-20 xl:gap-28"
+        className="w-full items-start justify-start sm:flex-col md:flex md:gap-20 xl:gap-28"
       >
-        <div className="flex flex-col items-start justify-start w-1/2">
-          <h1 className="font-bold text-white md:text-[25px] lg:text-[30px] xl:text-[35px] lap:text-[40px]">
+        <div className="flex flex-col items-start justify-start sm:w-[85%] md:w-1/2">
+          <h1 className="font-bold text-white sm:text-[25px] md:text-[25px] lg:text-[30px] xl:text-[35px] lap:text-[40px]">
             Chef's Word
           </h1>
           <img
             src={spoon}
             alt="spoon-icon"
             width={70}
-            className="mt-1 md:w-[45px] lg:w-[50px] xl:w-[60px] lap:w-[70px]"
+            className="mt-1 sm:w-[40px] md:w-[45px] lg:w-[50px] xl:w-[60px] lap:w-[70px]"
           />
 
-          <p className=" font-cormorant uppercase tracking-widest md:mt-5 md:text-[20px] lg:mt-5 lg:text-[22px] xl:mt-6 xl:text-[26.5px] lap:mt-8 lap:text-[35px]">
+          <p className=" font-cormorant uppercase tracking-widest sm:mt-10 sm:text-[20px] md:mt-5 md:text-[20px] lg:mt-5 lg:text-[22px] xl:mt-6 xl:text-[26.5px] lap:mt-8 lap:text-[35px]">
             Creating exceptional dishes is our{" "}
             <span className="text-white">passion</span> and{" "}
             <span className="text-white">art</span>
           </p>
         </div>
-        <div className="flex flex-col items-center justify-start w-1/2">
-          <p className="max-w-[600px] font-Montserrat font-bold text-white/90 md:mt-[8px] md:text-[15.5px] md:leading-[26px] lg:mt-[8px] lg:text-[15.5px] lg:leading-[26px] xl:mt-2 xl:text-[20px] xl:leading-[35px] lap:mt-3 lap:text-[24px] lap:leading-[45px] ">
-            <span className="text-golden lg:text-[35px] xl:text-[40px] lap:text-[50px]">
+        <div className="flex flex-col items-center justify-start sm:w-[85%] md:w-1/2">
+          <p className="max-w-[600px] font-Montserrat font-bold text-white/90 sm:mt-6 sm:text-[18px] sm:font-medium sm:leading-[30px] md:mt-[8px] md:text-[15.5px] md:leading-[26px] lg:mt-[8px] lg:text-[15.5px] lg:leading-[26px] xl:mt-2 xl:text-[20px] xl:leading-[35px] lap:mt-3 lap:text-[24px] lap:leading-[45px] ">
+            <span className="text-golden md:text-[20px] lg:text-[35px] xl:text-[40px] lap:text-[50px]">
               "
             </span>{" "}
             We strive to take you on a journey of flavors. Each plate is a{" "}
@@ -50,9 +50,9 @@ const Chef = () => (
 
       <div
         id="bottom-div"
-        className="flex w-full items-center justify-between max-[1000px]:flex-col md:mt-[44px] md:gap-[30px] lg:mt-12 lg:gap-8 xl:mt-16 xl:gap-10 lap:mt-20"
+        className="flex w-full items-center justify-between max-[1000px]:flex-col sm:mt-20 sm:gap-[45px] md:mt-[44px] md:gap-[30px] lg:mt-12 lg:gap-8 xl:mt-16 xl:gap-10 lap:mt-20"
       >
-        <div className="relative flex max-h-[300px] w-2/3 items-center  justify-between overflow-hidden rounded-lg px-10 pt-10 shadow-bg_gold transition-all duration-300 ease-in-out hover:bg-black hover:shadow-sh_gold md:max-h-[160px] min-[1000px]:w-1/2 lg:max-h-[160px] lg:min-h-[160px] xl:min-h-[300px]">
+        <div className="relative flex items-center justify-between overflow-hidden rounded-lg px-10 pt-10 shadow-bg_gold transition-all duration-300 ease-in-out hover:bg-black hover:shadow-sh_gold sm:min-h-[230px] md:max-h-[160px] md:w-2/3 min-[1000px]:w-1/2 lg:max-h-[160px] lg:min-h-[160px] xl:min-h-[300px]">
           <div id="image-div" className="">
             <img
               src={chef2}
@@ -63,17 +63,17 @@ const Chef = () => (
             />
           </div>
           <div id="name-div" className="flex flex-col items-end justify-start">
-            <p className="font-bold text-white md:text-[20px] lg:text-[20px] xl:text-[24px] lap:text-[28px] ">
+            <p className="font-bold text-white sm:text-[25px] md:text-[20px] lg:text-[20px] xl:text-[24px] lap:text-[28px] ">
               Sarah Camron
             </p>
-            <p className="font-alt md:text-[14px] lg:text-[14px] xl:mt-1 xl:text-[18px] lap:mt-2 lap:text-[20px]">
+            <p className="font-alt sm:text-[18px] md:text-[14px] lg:text-[14px] xl:mt-1 xl:text-[18px] lap:mt-2 lap:text-[20px]">
               Chef & Founder
             </p>
             <img
               src={sign2}
               alt="sign_image"
               width={320}
-              className="opacity-70 md:mt-4 md:max-h-[50px] lg:mt-4 lg:max-h-[40px] xl:mt-6 xl:max-h-[85px] lap:max-h-[130px]"
+              className="opacity-70 sm:mt-4 sm:max-h-[90px] md:mt-4 md:max-h-[50px] lg:mt-4 lg:max-h-[40px] xl:mt-6 xl:max-h-[85px] lap:max-h-[130px]"
             />
           </div>
           {/* <div
@@ -90,28 +90,28 @@ const Chef = () => (
           </div> */}
         </div>
 
-        <div className="flex w-2/3 items-center justify-between overflow-hidden rounded-lg px-10 pt-10 shadow-bg_gold transition-all duration-300 ease-in-out hover:bg-black hover:shadow-sh_gold md:max-h-[160px] min-[1000px]:w-1/2 lg:max-h-[160px] lg:min-h-[160px] xl:max-h-[300px] xl:min-h-[300px]">
+        <div className="flex items-center justify-between overflow-hidden rounded-lg px-10 pt-10 shadow-bg_gold transition-all duration-300 ease-in-out hover:bg-black hover:shadow-sh_gold sm:min-h-[230px] md:max-h-[160px] md:w-2/3 min-[1000px]:w-1/2 lg:max-h-[160px] lg:min-h-[160px] xl:max-h-[300px] xl:min-h-[300px]">
           <div id="image-div" className="">
             <img
               src={chef1}
               alt="chef image"
               width={390}
               height={390}
-              className="relative md:-left-[20px] md:w-[380px] lg:-left-6 lg:w-[390px] xl:-bottom-1 xl:-left-4 xl:w-[485px] lap:-bottom-0 lap:-left-0 lap:w-[390px]"
+              className="relative sm:-left-[20px] sm:w-[400px] md:-left-[20px] md:w-[380px] lg:-left-6 lg:w-[390px] xl:-bottom-1 xl:-left-4 xl:w-[485px] lap:-bottom-0 lap:-left-0 lap:w-[390px]"
             />
           </div>
           <div id="name-div" className="flex flex-col items-end justify-start">
-            <p className="font-bold text-white md:text-[20px] lg:text-[20px] xl:text-[24px] lap:text-[28px] ">
+            <p className="font-bold text-white sm:text-[25px] md:text-[20px] lg:text-[20px] xl:text-[24px] lap:text-[28px] ">
               Kevin Luo
             </p>
-            <p className="text-left font-alt md:text-[14px] lg:text-[14px] xl:mt-1 xl:text-[18px] lap:mt-2 lap:text-[20px]">
+            <p className="text-left font-alt sm:text-[18px] md:text-[14px] lg:text-[14px] xl:mt-1 xl:text-[18px] lap:mt-2 lap:text-[20px]">
               Chef & Founder
             </p>
             <img
               src={sign1}
               alt="sign_image"
               width={350}
-              className="md:mt-4 md:w-[290px] lg:mt-4 lg:w-[290px] xl:mt-6 xl:w-[300px] lap:w-[350px]"
+              className="sm:mt-4 sm:w-[280px] md:mt-4 md:w-[290px] lg:mt-4 lg:w-[290px] xl:mt-6 xl:w-[300px] lap:w-[350px]"
             />
           </div>
         </div>

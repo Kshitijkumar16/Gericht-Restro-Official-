@@ -7,7 +7,7 @@ import { gericht } from "../assets";
 const Navbar = () => {
   // const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
-    <nav className="lg:padding-x flex items-center justify-between font-alt text-golden md:pt-6 lg:pt-[30px] xl:pt-8 lap:pb-8 lap:pt-12">
+    <nav className="lg:padding-x flex items-center justify-between font-alt text-golden sm:pt-6 lg:pt-[30px] xl:pt-8 lap:pb-8 lap:pt-12">
       <m.div
         initial={{ opacity: 0, scale: 1 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -20,7 +20,7 @@ const Navbar = () => {
           width={200}
           height="auto"
           alt="Geritch-logo"
-          className=" rounded-lg border-[2px] border-golden border-opacity-70 bg-gradient-to-br from-black/90 to-black/50 px-3 py-1 md:w-[165px] lg:w-[200px]"
+          className=" rounded-lg border-[2px] border-golden border-opacity-70 bg-gradient-to-br from-black/90 to-black/50 px-3 py-1 sm:w-[155px] md:w-[165px] lg:w-[200px]"
         />
       </m.div>
 
@@ -29,12 +29,12 @@ const Navbar = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1 }}
         id="desktop-navbar"
-        className="flex items-start justify-end flex-1 md:gap-7 lg:gap-8 xl:gap-10 lap:gap-16"
+        className="flex items-start justify-end flex-1 sm:gap-6 md:gap-7 lg:gap-8 xl:gap-10 lap:gap-16"
       >
         {nav_linkss.map((item) => (
           <div
             key={item.label}
-            className="relative top-2 font-cormorant md:text-[17px] lg:text-[20px] xl:text-[22px]"
+            className="relative top-2 font-cormorant sm:text-[17px] lg:text-[20px] xl:text-[22px]"
           >
             <a
               href={item.href}
@@ -50,7 +50,7 @@ const Navbar = () => {
 
         <button
           type="button"
-          className="rounded-full bg-gradient-to-br from-white to-golden font-alt font-bold text-black shadow-bg_gold transition-all duration-700 ease-in-out hover:shadow-sh_gold md:px-[8px] md:py-[6px] md:text-[14px] lg:px-[10px] lg:py-[7px] lg:text-[16px] xl:px-3 xl:py-2 xl:text-[18px] lap:px-4 lap:py-3"
+          className="relative lg:top-0 md:top-1 sm:top-[4px] rounded-full bg-gradient-to-br from-white to-golden font-alt font-bold text-black shadow-bg_gold transition-all duration-700 ease-in-out hover:shadow-sh_gold sm:px-[8px] sm:py-[7px] md:px-[8px] md:py-[6px] sm:text-[14px] md:text-[14px] lg:px-[10px] lg:py-[7px] lg:text-[16px] xl:px-3 xl:py-2 xl:text-[18px] lap:px-4 lap:py-3"
         >
           Book Table
         </button>

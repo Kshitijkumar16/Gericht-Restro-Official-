@@ -16,11 +16,11 @@ const SpecialMenu = () => {
 
   return (
     <section
-      className="relative flex flex-col lg:padding-x font-cormorant text-golden md:pb-24 lg:pb-28 xl:pb-32 lap:pb-40"
+      className="lg:padding-x relative flex flex-col font-cormorant text-golden sm:pb-24 sm:pt-10 md:pb-24 lg:pb-28 xl:pb-32 lap:pb-40"
       id="menu-section"
     >
       <div className="flex items-center justify-end">
-        <div className="relative text-right font-cormorant font-extrabold uppercase text-golden/30 max-[1642px]:text-[65px] max-[1642px]:tracking-[25px] md:text-[55px] lg:-right-4 lg:text-[55px] lg:leading-[65px] lg:tracking-[20px] xl:-right-8 xl:text-[60px] xl:leading-normal xl:tracking-[25px] lap:-right-8 lap:text-[72px] lap:tracking-[30px]">
+        <div className="relative text-right font-cormorant font-extrabold uppercase text-golden/30 max-[1642px]:text-[65px] max-[1642px]:tracking-[25px] sm:-right-5 sm:-top-10 sm:text-[50px] md:text-[55px] lg:-right-4 lg:text-[55px] lg:leading-[65px] lg:tracking-[20px] xl:-right-8 xl:text-[60px] xl:leading-normal xl:tracking-[25px] lap:-right-8 lap:text-[72px] lap:tracking-[30px]">
           Our <span className="max-lap:hidden">&nbsp;</span>{" "}
           <span className="xl:hidden">
             <br />
@@ -28,16 +28,16 @@ const SpecialMenu = () => {
           Signature
         </div>
       </div>
-      <div className="relative flex items-center w-full md:-left-10 md:mt-16 lg:-left-10 lg:mt-20 lg:justify-start xl:justify-between">
+      <div className="relative flex w-full items-center md:-left-10 md:mt-16 lg:-left-10 lg:mt-20 lg:justify-start xl:justify-between">
         <div
           id="nav-div"
-          className="relative w-[30%] md:left-10 lg:left-0 lap:left-10"
+          className="relative w-[30%] sm:left-8 md:left-10 lg:left-0 lap:left-10"
         >
           <div
             id="cuisine-selector"
-            className="z-10 flex flex-col items-center justify-center md:gap-3 lg:gap-4 "
+            className="z-10 flex flex-col items-center justify-center sm:gap-3 md:gap-3 lg:gap-4 "
           >
-            <div className="md:h-[50px] lg:h-[65px] w-[2px] bg-golden"></div>
+            <div className="w-[2px] bg-golden sm:h-[45px] md:h-[50px] lg:h-[65px]"></div>
             <div className="relative ">
               <div
                 onClick={() => setActiveCuisine("asian")}
@@ -85,16 +85,16 @@ const SpecialMenu = () => {
                 }`}
               ></div>
             </div>
-            <div className="md:h-[50px] lg:h-[65px] w-[2px] bg-golden"></div>
+            <div className="w-[2px] bg-golden sm:h-[45px] md:h-[50px] lg:h-[65px]"></div>
           </div>
         </div>
         {cuisineData[activeCuisine].map((cuisine, i) => (
           <div
             key={i}
-            className="relative z-10 flex flex-col rounded-lg border-[0.5px] bg-[url('./assets/menubg3.png')] from-black via-black/90 to-black/0 bg-cover bg-center pb-12 shadow-bg_gold md:-right-10 md:px-7 lg:-right-12 lg:w-[85%] lg:px-8 xl:w-[70%] xl:px-12 lap:px-20"
+            className="relative z-10 flex flex-col rounded-lg border-[0.5px] bg-[url('./assets/menubg3.png')] from-black via-black/90 to-black/0 bg-cover bg-center pb-12 shadow-bg_gold sm:px-6 md:-right-10 md:px-7 lg:-right-12 lg:w-[85%] lg:px-8 xl:w-[70%] xl:px-12 lap:px-20"
           >
             <div className="flex items-center justify-center md:py-7 lg:py-6 xl:py-8 lap:py-10">
-              <h1 className=" font-extrathin font-alt uppercase text-golden/50 md:text-[15px] md:leading-[16px] md:tracking-[15px] lg:text-[16px] lg:tracking-[17px] xl:text-[20px] xl:tracking-[25px] lap:text-[24px] lap:tracking-[30px] ">
+              <h1 className=" font-extrathin font-alt uppercase text-golden/50 sm:text-[18px] sm:leading-[20px] md:text-[15px] md:leading-[16px] md:tracking-[15px] lg:text-[16px] lg:tracking-[17px] xl:text-[20px] xl:tracking-[25px] lap:text-[24px] lap:tracking-[30px] ">
                 {cuisine.title}
               </h1>
             </div>
@@ -106,7 +106,7 @@ const SpecialMenu = () => {
                 exit="exit"
                 transition={{ duration: 1 }}
                 staggerChildren={0.2}
-                className={`pointer-events-none grid grid-flow-row place-content-start md:gap-y-4 lg:gap-y-5 xl:gap-y-6 lap:gap-y-8`}
+                className={`pointer-events-none grid grid-flow-row place-content-start sm:gap-y-4 md:gap-y-4 lg:gap-y-5 xl:gap-y-6 lap:gap-y-8`}
               >
                 {cuisine.dishes.map((dish, i) => (
                   <m.div
@@ -117,9 +117,9 @@ const SpecialMenu = () => {
                     transition={{ duration: 1 }}
                     staggerChildren={0.2}
                     key={i}
-                    className="grid grid-cols-3 row-span-1 "
+                    className="row-span-1 grid grid-cols-3 "
                   >
-                    <div className="flex flex-col col-span-2">
+                    <div className="col-span-2 flex flex-col">
                       <h1 className=" font-extrabold uppercase md:text-[18px] md:tracking-widest lg:text-[20px] lg:tracking-widest xl:text-[28px] lap:text-[32px]">
                         {dish.dishName}
                       </h1>
@@ -127,8 +127,8 @@ const SpecialMenu = () => {
                         {dish.description}
                       </p>
                     </div>
-                    <div className="relative col-span-1 -top-2 place-self-center">
-                      <p className="tracking-wider font-Montserrat">
+                    <div className="relative -top-2 col-span-1 place-self-center">
+                      <p className="font-Montserrat tracking-wider">
                         {dish.price}/-
                       </p>
                     </div>
@@ -161,7 +161,7 @@ const SpecialMenu = () => {
           <div>
             <img
               src={gr2}
-              alt=""  
+              alt=""
               width={380}
               className="md:w-[210px] lg:w-[210px] xl:w-[320px] lap:w-[380px]"
             />
