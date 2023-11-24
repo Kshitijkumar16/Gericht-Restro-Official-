@@ -107,15 +107,15 @@ const Footer = () => (
       id="footer-bottom-line"
       className="flex w-full justify-between sm:mb-12 sm:mt-6 lg:mb-12 lg:mt-6 xl:mb-16 xl:mt-8 lap:mb-20 lap:mt-10"
     >
-      <div className="items-center justify-start font-Montserrat text-white sm:flex-col sm:text-[14px] md:flex md:gap-4 lg:gap-4 lg:text-[14px] xl:gap-5 xl:text-[15px] lap:gap-6 lap:text-[16px]">
+      <div className="items-center justify-start font-Montserrat text-white max-md:flex-col sm:text-[14px] md:flex md:gap-4 lg:gap-4 lg:text-[14px] xl:gap-5 xl:text-[15px] lap:gap-6 lap:text-[16px]">
         <p className="">2024 Gericht. All Rights reserved.</p>
-        <p className="hover:cursor-pointer hover:text-golden sm:mt-2">
+        <p className="hover:cursor-pointer hover:text-golden max-md:mt-2">
           Terms of Service
         </p>
-        <p className="hover:cursor-pointer hover:text-golden sm:mt-2">
+        <p className="hover:cursor-pointer hover:text-golden max-md:mt-2">
           Privacy Policy
         </p>
-        <p className="hover:cursor-pointer hover:text-golden sm:mt-2">
+        <p className="hover:cursor-pointer hover:text-golden max-md:mt-2">
           Cookie Policy
         </p>
       </div>

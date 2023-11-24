@@ -5,16 +5,16 @@ import { SpinLogo } from "../components";
 import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 const Chef = () => (
-  <section className="sm:padding-x relative z-20 overflow-hidden font-cormorant text-golden sm:py-24 md:py-28 lg:py-32 xl:py-40 lap:py-64">
+  <section className="relative z-20 overflow-hidden sm:padding-x font-cormorant text-golden sm:py-24 md:py-28 lg:py-32 xl:py-40 lap:py-64">
     <div
       id="wrapper-div"
       className="relative flex flex-col items-center justify-between rounded-xl bg-gradient-to-br from-black/80 via-black/80 to-black/20 shadow-bg_gold sm:p-9 md:p-10 lg:p-12 xl:p-16"
     >
       <div
         id="top-div"
-        className="w-full items-start justify-start sm:flex-col md:flex md:gap-20 xl:gap-28"
+        className="items-start justify-start w-full sm:flex-col md:flex md:gap-20 xl:gap-28"
       >
-        <div className="flex flex-col items-start justify-start sm:w-[85%] md:w-1/2">
+        <div className="flex flex-col items-start justify-start max-sm:w-[85%] md:w-1/2">
           <h1 className="font-bold text-white sm:text-[25px] md:text-[25px] lg:text-[30px] xl:text-[35px] lap:text-[40px]">
             Chef's Word
           </h1>
@@ -117,7 +117,7 @@ const Chef = () => (
         </div>
       </div>
 
-      <div className="absolute text-golden md:-right-12 md:-top-12 lg:-right-16 lg:-top-16 xl:-right-12 xl:-top-12 lap:-right-16 lap:-top-16">
+      <div className="absolute text-golden sm:-right-10 sm:-top-10 md:-right-12 md:-top-12 lg:-right-16 lg:-top-16 xl:-right-12 xl:-top-12 lap:-right-16 lap:-top-16">
         <SpinLogo />
       </div>
     </div>
